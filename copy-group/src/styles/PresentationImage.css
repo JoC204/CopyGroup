@@ -1,0 +1,13 @@
+.presentation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:150px; /* Ajusta 60px si el navbar tiene otra altura */
+    background-color: transparent; /* Color de fondo opcional */
+  }
+  
+  .presentation-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ajusta la imagen para que se contenga dentro del contenedor */
+  }

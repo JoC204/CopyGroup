@@ -1,0 +1,120 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative; /* Añadido para posicionar el menú */
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    height: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  }
+  
+  .navbar-menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 100;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 90;
+  }
+  
+  .navbar-menu.open {
+    transform: translateX(0);
+  }
+  
+  .navbar-item {
+    opacity: 0;
+    padding: 1rem;
+    /* border-bottom: 1px solid #444; */
+    text-align: left;
+    color: #fff; /* Asegura que el texto sea blanco para mejor visibilidad */
+    animation: fadeIn 0.9s forwards; /* Añade la animación */
+  }
+  
+  .navbar-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .navbar-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .navbar-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .navbar-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .navbar-item:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  .navbar-item:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  
+  .navbar-item:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  
+  .navbar-item:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+  
+  .navbar-item:nth-child(9) {
+    animation-delay: 0.9s;
+  }
+  
+  .navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (min-width: 600px) {
+    .navbar-menu {
+      flex-direction: row;
+      position: static;
+      transform: translateX(0);
+      background: transparent;
+      height: auto;
+    }
+  
+    .navbar-item {
+      border: none;
+      opacity: 1; /* Asegura que los elementos sean visibles en pantallas grandes */
+      animation: none; /* Elimina la animación en pantallas grandes */
+    }
+  
+    .navbar-menu-icon {
+      display: none;
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  

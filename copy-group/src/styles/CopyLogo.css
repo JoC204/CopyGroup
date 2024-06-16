@@ -1,0 +1,10 @@
+.copy-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .logo-image {
+    height: 30px; /* Ajusta el tamaño de la imagen */
+  }
+    
