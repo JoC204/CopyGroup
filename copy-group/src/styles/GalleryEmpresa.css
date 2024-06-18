@@ -1,0 +1,19 @@
+.gallery-empresa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .gallery-image.visible {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  
