@@ -3,9 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  font-size: 1.5rem;
   background-color: #333;
   color: white;
-  position: relative; /* Añadido para posicionar el menú */
+  position: fixed; /* Añadido para posicionar el menú */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo {
@@ -14,13 +18,13 @@
 }
 
 .logo-image {
-  height: 40px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 60px; /* Ajusta el tamaño de la imagen según tus necesidades */
 }
 
 .navbar-menu-icon {
   font-size: 1.5rem;
   cursor: pointer;
-  z-index: 30;
+  padding-right: 40px;
 }
 
 .navbar-menu {
@@ -34,9 +38,11 @@
   left: 0;
   color: white;
   width: 100%;
-  background: #333;
+  height: 100;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro semitransparente */
+  display: flex;
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.6s ease-in-out;
   z-index: 90;
 }
 
@@ -46,11 +52,11 @@
 
 .navbar-item {
   padding: 1rem;
-  border-bottom: 1px solid #444;
-  text-align: center;
+  border-bottom: 0.5px solid #4d4d4d77;
+  text-align: left;
   color: #fff; /* Color del texto normal */
   opacity: 0;
-  animation: fadeIn 0.5s forwards;
+  animation: fadeIn 8s forwards;
 }
 
 .navbar-item a {
