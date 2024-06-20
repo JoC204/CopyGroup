@@ -14,6 +14,7 @@ import Posters from './components/ListMenu/Posters';
 import Plots from './components/ListMenu/Plots';
 import Proyect from './components/ListMenu/Proyect';
 import Contact from './components/ListMenu/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,16 +23,17 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />  Default route
-          <Route path="/empresa" element={<GalleryEmpresa />} />  {/* Route for Empresa */}
-          <Route path="/services" element={<GalleryServices />} />  {/* Route for Servicios */}
-          <Route path="/products" element={<Products />} />  {/* Route for Servicios */}
-          <Route path="/materials" element={<Materials />} />  {/* Route for Servicios */}
-          <Route path="/posters" element={<Posters />} />  {/* Route for Servicios */}
-          <Route path="/plots" element={<Plots />} />  {/* Route for Servicios */}
-          <Route path="/proyect" element={<Proyect />} />  {/* Route for Servicios */}
-          <Route path="/contact" element={<Contact />} />  {/* Route for Servicios */}
+          <Route path="/empresa" element={<GalleryEmpresa />} />
+          <Route path="/services" element={<GalleryServices />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/materials" element={<Materials />} />
+          <Route path="/posters" element={<Posters />} />
+          <Route path="/plots" element={<Plots />} />
+          <Route path="/proyect" element={<Proyect />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
