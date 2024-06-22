@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Im
 // import PresentationImage from './components/PresentationImage';
 // import CopyLogo from './components/CopyLogo';
 import './styles/App.css';
+import './styles/Body-routes.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import GalleryEmpresa from './components/ListMenu/GalleryEmpresa';
@@ -21,17 +22,19 @@ function App() {
     <Router>  {/* Wrap the app with Router */}
       <div className="App">
         <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />  Default route
-          <Route path="/empresa" element={<GalleryEmpresa />} />
-          <Route path="/services" element={<GalleryServices />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/materials" element={<Materials />} />
-          <Route path="/posters" element={<Posters />} />
-          <Route path="/plots" element={<Plots />} />
-          <Route path="/proyect" element={<Proyect />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <div className='Body-routes'>
+          <Routes>
+            <Route path="/" element={<Home />} />  Default route
+            <Route path="/empresa" element={<GalleryEmpresa />} />
+            <Route path="/services" element={<GalleryServices />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/materials" element={<Materials />} />
+            <Route path="/posters" element={<Posters />} />
+            <Route path="/plots" element={<Plots />} />
+            <Route path="/proyect" element={<Proyect />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </div>
       <Footer />
     </Router>
