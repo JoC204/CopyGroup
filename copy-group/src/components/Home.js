@@ -6,8 +6,8 @@ import portadaHome from '../img/portada.png';
 const Home = () => {
   return (
     <div className='style'>
-      <ImageCarousel />
       <img className='img-portada' src={portadaHome} alt="Portada Home" />
+      <ImageCarousel />
       <h1>Welcome to Copy Group</h1>
       <p>This is the home page.</p>
     </div>
