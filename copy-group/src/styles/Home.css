@@ -1,0 +1,59 @@
+/* styles/Home.css */
+
+/* Estilos generales */
+.style {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Imagen principal */
+  .style img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+.img-portada{
+  margin-top: 2rem;
+}
+
+  /* Encabezado y párrafo */
+  .style h1 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .style p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  /* Media queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    .style {
+      padding: 10px;
+    }
+  
+    .style h1 {
+      font-size: 1.5em;
+    }
+  
+    .style p {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .style {
+      padding: 5px;
+    }
+  
+    .style h1 {
+      font-size: 1.2em;
+    }
+  
+    .style p {
+      font-size: 0.8em;
+    }
+  }
+  
