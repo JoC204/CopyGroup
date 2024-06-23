@@ -18,12 +18,17 @@ const ImageCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 3, // Cantidad de imagenes en pantalla
+    speed: 600,
+    slidesToShow: 1, // Cantidad de imagenes en pantalla
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    fade: true,
     ltl: true, // Desplazamiento de derecha a izquierda
+    arrows: true,
+    pauseOnHover: false, // Desactiva pausa al pasar el cursor
+    pauseOnFocus: false, // Desactiva pausa al enfocar el carrusel
+    pauseOnDotsHover: false, // Desactiva pausa al pasar el cursor sobre los puntos de navegación
   };
 
   return (
