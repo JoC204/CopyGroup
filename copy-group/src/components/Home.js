@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageCarousel from '../components/ImageCarousel';
 import "../styles/Home.css"
-import portadaHome from '../img/portada.png';
+import portadaHome from '../img/mesaPortada.png';
 
 const Home = () => {
   return (
