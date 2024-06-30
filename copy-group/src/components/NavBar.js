@@ -22,7 +22,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <RouterLink to="/" onClick={toggleMenu}>
-          <CopyLogo />
+          <CopyLogo width="70px" height="auto"/>
         </RouterLink>
         Copy Group
       </div>

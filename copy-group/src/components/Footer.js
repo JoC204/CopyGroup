@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-logo">
-        <CopyLogo />
+        <CopyLogo width="200px" height="auto"/>
       </div>
       <div className="footer-links">
         <a
