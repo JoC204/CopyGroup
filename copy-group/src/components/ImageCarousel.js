@@ -19,7 +19,7 @@ const ImageCarousel = () => {
     dots: false,
     infinite: true,
     speed: 600,
-    slidesToShow: 1, // Cantidad de imagenes en pantalla
+    slidesToShow: 3, // Cantidad de imagenes en pantalla
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
