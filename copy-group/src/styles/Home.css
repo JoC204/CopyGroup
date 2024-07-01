@@ -1,9 +1,7 @@
-/* styles/Home.css */
-
-/* Estilos generales */
 .style {
     padding: 20px;
     text-align: center;
+    overflow: hidden; /* Evita el desplazamiento interno */
   }
   
   /* Imagen principal */
@@ -26,6 +24,41 @@
   .style p {
     font-size: 1em;
     margin: 10px 0;
+  }
+  .home-container {
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Evita el desplazamiento interno */
+  }
+  
+  .img-portada {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .link-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0; /* Adjust margin for spacing */
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
   }
   
   /* Media queries para dispositivos móviles */
@@ -57,3 +90,12 @@
     }
   }
   
+  @media (max-width: 480px) {
+    .home-container {
+      padding: 5px;
+    }
+  
+    h1 {
+      font-size: 1.2em;
+    }
+  }

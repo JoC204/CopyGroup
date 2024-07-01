@@ -7,7 +7,7 @@ import './styles/App.css';
 import './styles/Body-routes.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import GalleryEmpresa from './components/ListMenu/GalleryEmpresa';
+import GalleryEmpresa from './components/ListMenu/Empresa';
 import GalleryServices from './components/ListMenu/GalleryServices';
 import Products from './components/ListMenu/Products';
 import Materials from './components/ListMenu/Materials';

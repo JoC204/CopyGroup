@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import '../../styles/GalleryEmpresa.css';
+import '../../styles/Empresa.css';
 
 // Importa las imágenes locales
 import img1 from '../../img/1.jpg';

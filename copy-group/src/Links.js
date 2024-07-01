@@ -1,4 +1,4 @@
-import GalleryEmpresa from "./components/ListMenu/GalleryEmpresa";
+import GalleryEmpresa from "./components/ListMenu/Empresa";
 import GalleryServices from "./components/ListMenu/GalleryServices";
 // import Products from "./components/ListMenu/Products";
 import Materials from "./components/ListMenu/Materials";

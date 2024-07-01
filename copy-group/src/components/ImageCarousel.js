@@ -22,8 +22,8 @@ const ImageCarousel = () => {
     slidesToShow: 3, // Cantidad de imagenes en pantalla
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    fade: true,
+    autoplaySpeed: 2000,
+    // fade: true,
     ltl: true, // Desplazamiento de derecha a izquierda
     arrows: true,
     pauseOnHover: false, // Desactiva pausa al pasar el cursor
