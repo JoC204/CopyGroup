@@ -18,7 +18,7 @@ const ImageCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 600,
+    speed: 800,
     slidesToShow: 3, // Cantidad de imagenes en pantalla
     slidesToScroll: 1,
     autoplay: true,

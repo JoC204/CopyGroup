@@ -1,32 +1,38 @@
+.link-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Para centrar las tarjetas horizontalmente */
+  margin: -1rem; /* Ajuste para márgenes negativos que compensen el margen positivo de .link-card */
+}
+
 .link-card {
-    flex: 1 1 calc(50% - 20px);
-    margin: 1rem;
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(50% - 2rem); /* Ancho del 50% menos márgenes */
+  margin: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+}
+
+.link-card img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+}
+
+.link-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .link-card {
+    flex: 1 1 calc(50% - 2rem); /* Ancho del 50% menos márgenes en dispositivos móviles */
   }
-  
-  .link-card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
+
   .link-card h2 {
-    font-size: 1.5em;
-    margin: 10px 0;
-    color: #333;
+    font-size: 1.2em;
   }
-  
-  @media (max-width: 768px) {
-    .link-card {
-      flex: 1 1 calc(100% - 20px);
-    }
-  
-    .link-card h2 {
-      font-size: 1.2em;
-    }
-  }
-  
+}

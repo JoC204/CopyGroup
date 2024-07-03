@@ -32,8 +32,7 @@ const Home = () => {
             key={index} 
             path={link.path} 
             image={link.image} 
-            altText={link.altText} 
-            title={link.title} 
+            altText={link.altText}  
           />
         ))}
       </div>

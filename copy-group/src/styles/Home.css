@@ -48,7 +48,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0; /* Adjust margin for spacing */
-    gap: 2rem;
   }
   
   @media (max-width: 768px) {

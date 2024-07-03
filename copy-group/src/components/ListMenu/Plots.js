@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+// import GalleryItem from '../GalleryItem';
+import ImgPlots from '../Images/ImgPlots';
+import ImageGallery from '../ImageGallery';
 
-const Services = () => {
+const Plots = () => {
+  const [imagesToLoad, setImagesToLoad] = useState([]);
+
+  useEffect(() => {
+    setImagesToLoad(ImgPlots);
+  }, []);
+
   return (
     <div>
-      <h1>Ploteos</h1>
-      <p>This is Gallery plots</p>
+      <p>Img</p>
+      <ImageGallery title="Galería de Plots" images={imagesToLoad} />
     </div>
   );
 };
 
-export default Services;
+export default Plots;

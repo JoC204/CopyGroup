@@ -7,7 +7,7 @@ import './styles/App.css';
 import './styles/Body-routes.css';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
-import GalleryEmpresa from './components/ListMenu/Empresa';
+import Empresa from './components/ListMenu/Empresa';
 import GalleryServices from './components/ListMenu/GalleryServices';
 import Products from './components/ListMenu/Products';
 import Materials from './components/ListMenu/Materials';
@@ -25,7 +25,7 @@ function App() {
         <div className='Body-routes'>
           <Routes>
             <Route path="/" element={<Home />} />  Default route
-            <Route path="/empresa" element={<GalleryEmpresa />} />
+            <Route path="/empresa" element={<Empresa />} />
             <Route path="/services" element={<GalleryServices />} />
             <Route path="/products" element={<Products />} />
             <Route path="/materials" element={<Materials />} />
