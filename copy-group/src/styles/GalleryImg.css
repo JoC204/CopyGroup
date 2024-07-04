@@ -1,0 +1,14 @@
+/* src/styles/GalleryImg.css */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
