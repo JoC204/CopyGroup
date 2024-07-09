@@ -8,7 +8,7 @@ import "./styles/Body-routes.css";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Empresa from "./components/ListMenu/Empresa";
-import GalleryServices from "./components/ListMenu/GalleryServices";
+import Services from "./components/ListMenu/Services";
 import Products from "./components/ListMenu/Products";
 import Materials from "./components/ListMenu/Materials";
 import Posters from "./components/ListMenu/Posters";
@@ -28,7 +28,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} /> Default route
             <Route path="/empresa" element={<Empresa />} />
-            <Route path="/services" element={<GalleryServices />} />
+            <Route path="/services" element={<Services />} />
             <Route path="/products" element={<Products />} />
             <Route path="/materials" element={<Materials />} />
             <Route path="/posters" element={<Posters />} />

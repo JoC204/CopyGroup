@@ -1,5 +1,5 @@
 import GalleryEmpresa from "./components/ListMenu/Empresa";
-import GalleryServices from "./components/ListMenu/GalleryServices";
+import GalleryServices from "./components/ListMenu/Services";
 // import Products from "./components/ListMenu/Products";
 import Materials from "./components/ListMenu/Materials";
 // import Posters from "./components/ListMenu/Posters";
