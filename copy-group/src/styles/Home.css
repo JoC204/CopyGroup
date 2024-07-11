@@ -26,7 +26,7 @@
     margin: 10px 0;
   }
   .home-container {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     overflow: hidden; /* Evita el desplazamiento interno */
   }
@@ -47,13 +47,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0; /* Adjust margin for spacing */
+    /* margin: 0; */
+    /* transition: transform 0.3s ease; */
   }
+  /* .link-cards-container:hover {
+    transform: scale(1.1);
+  } */
+   
   
   @media (max-width: 768px) {
-    .home-container {
-      padding: 10px;
-    }
   
     h1 {
       font-size: 1.5em;
@@ -90,9 +92,6 @@
   }
   
   @media (max-width: 480px) {
-    .home-container {
-      padding: 5px;
-    }
   
     h1 {
       font-size: 1.2em;

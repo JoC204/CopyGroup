@@ -10,10 +10,10 @@ const Services = () => {
       <h3>Tel: 341-555 55 55</h3>
       <iframe
         title="Google Maps"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.124842393455!2d-60.6304658!3d-32.94771319999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1dc9b6d36f%3A0x97b9e9584d94d851!2sMonumento%20Hist%C3%B3rico%20Nacional%20a%20la%20Bandera!5e0!3m2!1ses!2sar!4v1719155085406!5m2!1ses!2sar"
-        width="300"
-        height="200"
-        style={{ border: 0 }}
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.45389210251!2d-60.6718235304194!3d-33.00863757371278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7abfecd914af3%3A0xae3e0c091de6936f!2sCallao%206080%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1720059890124!5m2!1ses!2sar"
+        width="350"
+        height="300"
+        style={{ border:0 }}
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"

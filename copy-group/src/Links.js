@@ -1,5 +1,5 @@
-import GalleryEmpresa from "./components/ListMenu/Empresa";
-import GalleryServices from "./components/ListMenu/GalleryServices";
+import Empresa from "./components/ListMenu/Empresa";
+import Services from "./components/ListMenu/Services";
 // import Products from "./components/ListMenu/Products";
 import Materials from "./components/ListMenu/Materials";
 // import Posters from "./components/ListMenu/Posters";
@@ -10,8 +10,8 @@ import CopyLogo from "./components/CopyLogo";
 
 export const Link = [
   { path: "/", label: "Home", component: CopyLogo },
-  { path: "/empresa", label: "Empresa", component: GalleryEmpresa },
-  { path: "/services", label: "Servicios", component: GalleryServices },
+  { path: "/empresa", label: "Empresa", component: Empresa },
+  { path: "/services", label: "Servicios", component: Services },
   // { path: "/products", label: "Productos", component: Products },
   { path: "/materials", label: "Materiales", component: Materials },
   // { path: "/posters", label: "Carteles", component: Posters },
