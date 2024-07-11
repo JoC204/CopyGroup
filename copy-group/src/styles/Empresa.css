@@ -87,10 +87,6 @@
     list-style-type: none;
     padding: 0;
   }
-
-  li {
-    margin-bottom: 1.5em;
-  }
 }
 
 @media (min-width: 200px) {

@@ -1,5 +1,4 @@
-// src/components/Home.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import ImageCarousel from '../components/ImageCarousel';
 import LinkCard from '../components/LinkCard';
 import "../styles/Home.css";
@@ -12,6 +11,10 @@ import image5 from '../img/ploteo-uno.jpg';
 import image6 from '../img/ploteo-dos.jpg';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Desplazar a la parte superior
+  }, []);
+
   const links = [
     { path: "/empresa", image: image1, altText: "Empresa", title: "Empresa" },
     { path: "/services", image: image2, altText: "Servicios", title: "Servicios" },
@@ -31,6 +34,7 @@ const Home = () => {
           <LinkCard 
             key={index} 
             path={link.path} 
+            title={link.title}
             image={link.image} 
             altText={link.altText}  
           />
