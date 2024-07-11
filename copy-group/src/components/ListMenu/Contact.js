@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import Logo from "../../img/copyLogo.png";
 import "../../styles/Contacto.css";
 
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Desplazar a la parte superior
+  }, []);
+
   return (
     <div>
       <h1>Contacto</h1>

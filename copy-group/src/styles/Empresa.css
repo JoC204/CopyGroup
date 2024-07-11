@@ -145,9 +145,20 @@
   }
 }
 
-.services-content img {
-  align-items: center;
-  width: 100%;
-  height: auto;
-  margin: 0;
+@media (prefers-reduced-motion: no-preference) {
+
+  .services-content img {
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    scale: .5; opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+  }
+
+@keyframes fade-in {
+  to { scale: 1; opacity: 1;}
+}
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import imgBack from '../../img/background-empresa.png';
 import imgDigital from '../../img/impresion-dos.jpg';
 import imgSerigrafia from '../../img/impresion-uno.jpg';
@@ -7,6 +7,10 @@ import imgLonas from '../../img/ploteo-dos.jpg';
 import '../../styles/Empresa.css';
 
 const Empresa = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Desplazar a la parte superior
+  }, []);
+
   return (
     <div className="empresa-content">
       <div className="header">
