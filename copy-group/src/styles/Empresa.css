@@ -53,6 +53,7 @@
     background: rgba(0, 0, 0, 0.189);
     border-radius: 10px;
     overflow-x: hidden;
+    font-size: 1.4rem;
   }
 
   h1 {
@@ -129,7 +130,7 @@
     padding: 20px;
     height: auto;
     background: rgba(0, 0, 0, 0.189);
-    border-radius: 10px;
+    border-radius: 0.7rem;
     overflow-x: clip;
   }
 
@@ -152,6 +153,7 @@
     width: 100%;
     height: auto;
     margin: 0;
+    border-radius: 0.7rem;
     scale: .5; opacity: 0;
     animation: fade-in linear forwards;
     animation-timeline: view();
