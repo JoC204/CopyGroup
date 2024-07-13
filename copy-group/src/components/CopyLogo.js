@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../img/copyLogo.png'; // Importa la imagen
+import logo from '../img/copyLogo2.png'; // Importa la imagen
 import '../styles/CopyLogo.css'; // Importa los estilos
 
 const CopyLogo = ({ width, height }) => {

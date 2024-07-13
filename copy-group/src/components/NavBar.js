@@ -18,13 +18,27 @@ const NavBar = () => {
     window.location.pathname = path;
   };
 
+  window.addEventListener(
+    "scroll",
+    () => {
+      document.body.style.setProperty(
+        "--scroll",
+        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
+      );
+    },
+    false
+  );
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <RouterLink to="/">
-          <CopyLogo width="70px" height="auto"/>
+          <CopyLogo width="70px" height="auto"
+            
+          
+          />
+
         </RouterLink>
-        Copy Group
       </div>
       <div className="navbar-menu-icon" onClick={toggleMenu}>
         <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />

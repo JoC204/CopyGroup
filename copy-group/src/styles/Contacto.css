@@ -1,5 +1,7 @@
-.img-logo{
-    width: 60%;
-    height: auto;
-    margin: 1rem;
+.copyLogo{
+    display: flex;
+    justify-content: center;
+}
+.infoContact {
+    margin: 2rem;
 }

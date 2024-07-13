@@ -15,8 +15,25 @@
 
 .navbar-logo {
   display: flex;
+  justify-content: center;
   align-items: center;
-}
+  margin: 0;
+  padding: 0;
+  
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 
 .logo-image {
   height: 60px; /* Ajusta el tamaño de la imagen según tus necesidades */
