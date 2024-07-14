@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ImageCarousel from '../components/ImageCarousel';
 import LinkCard from '../components/LinkCard';
 import "../styles/Home.css";
+import "../styles/Body-routes.css";
 import portadaHome from '../img/mesaPortada.png';
 import image1 from '../img/impresion-uno.jpg'; // Importa tus imágenes
 import image2 from '../img/impresion-dos.jpg';
@@ -28,7 +29,7 @@ const Home = () => {
     <div className='home-container'>
       <img className='img-portada' src={portadaHome} alt="Portada Home" />
       <ImageCarousel />
-      <h1>Welcome to Copy Group</h1>
+      {/* <h1>Bienbenido a Copy Group</h1> */}
       <div className="link-cards-container">
         {links.map((link, index) => (
           <LinkCard 

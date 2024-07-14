@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import GalleryImg from "../GalleryImg";
 import ImgPlots from "../DirImg/ImgPlots";
+import '../../styles/Plots.css';
+import '../../styles/Body-routes.css';
 
 const Services = () => {
   useEffect(() => {
@@ -8,9 +10,8 @@ const Services = () => {
   }, []);
 
   return (
-    <div>
+    <div className="body-routes">
       <h1>Ploteos</h1>
-      <p>This is Gallery plots</p>
       <GalleryImg imageUrls={ImgPlots} />
     </div>
   );

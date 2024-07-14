@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars,faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import "../styles/NavBar.css";
 import CopyLogo from "./CopyLogo";
 import { Link } from "../Links";
@@ -33,11 +33,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <RouterLink to="/">
-          <CopyLogo width="70px" height="auto"
-            
-          
-          />
-
+          <CopyLogo width="70px" height="auto" />
         </RouterLink>
       </div>
       <div className="navbar-menu-icon" onClick={toggleMenu}>

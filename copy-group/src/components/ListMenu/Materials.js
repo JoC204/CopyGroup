@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import GalleryImg from "../GalleryImg";
 import ImgMaterials from "../DirImg/ImgMaterials";
 import '../../styles/Materials.css';
+import '../../styles/Body-routes.css';
 
 const Services = () => {
   useEffect(() => {
@@ -9,7 +10,7 @@ const Services = () => {
   }, []);
   
   return (
-    <div className='content'>
+    <div className='body-routes'>
       <h1>Materiales</h1>
       <GalleryImg imageUrls={ImgMaterials} />
     </div>

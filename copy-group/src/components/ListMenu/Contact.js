@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import CopyLogo from "../CopyLogo";
+// import CopyLogo from "../CopyLogo";
 import "../../styles/Contacto.css";
 import "../../styles/index.css";
+import '../../styles/Body-routes.css';
 
 const Contact = () => {
   useEffect(() => {
@@ -11,14 +12,14 @@ const Contact = () => {
   return (
     <div className="contacto-container">
       <h1>Contacto</h1>
-      <div className="copyLogo">
+      {/* <div className="copyLogo">
         <CopyLogo width="150px" height="auto" />
-      </div>
+      </div> */}
       <div className="infoContact">
-        <h3>Tel: 341-555 55 55</h3>
-        <h3>Callao 6080</h3>
-        <h3>Rosario - Santa Fe</h3>
-        <h3>Email: ejemplo@gmail.com</h3>
+        <p>Callao 6080</p>
+        <p>Tel: 341-555 55 55</p>
+        <p>Rosario - Santa Fe</p>
+        <p>Email: ejemplo@gmail.com</p>
       </div>
       <iframe
         title="Google Maps"

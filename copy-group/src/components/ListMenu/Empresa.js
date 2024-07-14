@@ -5,6 +5,7 @@ import imgSerigrafia from '../../img/impresion-uno.jpg';
 import imgRotulados from '../../img/ploteo-uno.jpg';
 import imgLonas from '../../img/ploteo-dos.jpg';
 import '../../styles/Empresa.css';
+import '../../styles/Body-routes.css';
 
 const Empresa = () => {
   useEffect(() => {
@@ -21,14 +22,13 @@ const Empresa = () => {
             En Copy Group, nos especializamos en ofrecer soluciones de impresión
             de alta calidad adaptadas a las necesidades de nuestros clientes.
           </p>
-          
         </div>
       </div>
       <div className="services-content">
-        <h2>Nuestros Servicios:</h2>
+        <h2>Nuestros Servicios</h2>
         <ul>
           <li>
-            <h3>Impresiones Digitales:</h3>
+            <h3>Impresiones Digitales</h3>
             <img src={imgDigital} alt="Impresiones Digitales"></img>
             <p>
               Contamos con la más avanzada tecnología en impresión digital para
