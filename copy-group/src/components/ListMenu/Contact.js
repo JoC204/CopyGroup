@@ -10,13 +10,14 @@ const Contact = () => {
 
   return (
     <div className="contacto-container">
-      <p className="bold" >Contacto</p>
+      <h1>Contacto</h1>
       <div className="copyLogo">
         <CopyLogo width="150px" height="auto" />
       </div>
       <div className="infoContact">
         <h3>Tel: 341-555 55 55</h3>
-        <h3>Callao 6080 - Rosario - Santa Fe</h3>
+        <h3>Callao 6080</h3>
+        <h3>Rosario - Santa Fe</h3>
         <h3>Email: ejemplo@gmail.com</h3>
       </div>
       <iframe
