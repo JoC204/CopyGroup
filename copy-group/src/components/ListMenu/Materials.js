@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import GalleryImg from "../GalleryImg";
 import ImgMaterials from "../DirImg/ImgMaterials";
+import '../../styles/Materials.css';
 
 const Services = () => {
   useEffect(() => {
@@ -8,9 +9,8 @@ const Services = () => {
   }, []);
   
   return (
-    <div>
+    <div className='content'>
       <h1>Materiales</h1>
-      <p>This is Gallery materials</p>
       <GalleryImg imageUrls={ImgMaterials} />
     </div>
   );

@@ -21,11 +21,7 @@ const Empresa = () => {
             En Copy Group, nos especializamos en ofrecer soluciones de impresión
             de alta calidad adaptadas a las necesidades de nuestros clientes.
           </p>
-          <p>
-            Contamos con la más avanzada tecnología en impresión digital para
-            ofrecer resultados precisos y de alta definición en una amplia
-            variedad de materiales.
-          </p>
+          
         </div>
       </div>
       <div className="services-content">
@@ -75,7 +71,7 @@ const Empresa = () => {
           dedicado a asegurar que cada impresión cumpla con los más altos
           estándares de calidad y satisfacción del cliente.
         </p>
-        <p>
+        <p className='italic'>
           Confíe en Copy Group para todas sus necesidades de impresión y descubra
           por qué somos líderes en el sector.
         </p>

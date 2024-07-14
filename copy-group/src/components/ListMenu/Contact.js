@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import CopyLogo from "../CopyLogo";
 import "../../styles/Contacto.css";
+import "../../styles/index.css";
 
-const Services = () => {
+const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Desplazar a la parte superior
   }, []);
 
   return (
-    <div>
-      <h1>Contacto</h1>
+    <div className="contacto-container">
+      <p className="bold" >Contacto</p>
       <div className="copyLogo">
         <CopyLogo width="150px" height="auto" />
       </div>
@@ -32,4 +33,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Contact;

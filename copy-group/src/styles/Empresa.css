@@ -2,7 +2,7 @@
   .empresa-content {
     overflow-x: clip;
   }
-
+ 
   .header {
     position: relative;
     height: 100svh;
@@ -20,7 +20,7 @@
     left: 0;
     width: 80%;
     height: 80%;
-    object-fit: cover;
+    /* object-fit: cover; */
     z-index: -1;
 
     -webkit-animation: header-image-animation linear forwards;
@@ -50,23 +50,23 @@
     position: relative;
     z-index: 1;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.189);
+    background: rgba(0, 0, 0, 0.433);
     border-radius: 10px;
     overflow-x: hidden;
-    font-size: 1.4rem;
   }
-
-  h1 {
-    font-size: 1.8em;
-    margin-bottom: 0.5em;
-    color: white;
+  .header-content h1 {
+    font-size: 3rem;
   }
 
   p {
-    font-size: 0.9em;
     line-height: 1.6;
     margin-bottom: 1em;
     color: white;
+    font-weight: 300;
+  }
+  .italic {
+    font-style: italic;
+    font-weight: 200;
   }
 
   .services-content {
@@ -95,22 +95,19 @@
     overflow-x: clip;
   }
 
-  h1 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 0.8em;
-  }
 
   h2 {
-    font-size: 1.2em;
+    font-size: 2em;
   }
 
   h3 {
-    font-size: 1em;
+    font-size: 2.5em;
   }
+  p {
+    font-size: 1.5em;
 
+  }
+  
   .header-content {
     padding: 10px;
   }
@@ -129,7 +126,7 @@
     z-index: 1;
     padding: 20px;
     height: auto;
-    background: rgba(0, 0, 0, 0.189);
+    background: rgba(0, 0, 0, 0.433);
     border-radius: 0.7rem;
     overflow-x: clip;
   }
