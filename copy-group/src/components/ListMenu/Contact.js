@@ -21,16 +21,7 @@ const Contact = () => {
         <p>Rosario - Santa Fe</p>
         <p>Email: ejemplo@gmail.com</p>
       </div>
-      {/* <iframe
-        title="Google Maps"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.45389210251!2d-60.6718235304194!3d-33.00863757371278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7abfecd914af3%3A0xae3e0c091de6936f!2sCallao%206080%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1720059890124!5m2!1ses!2sar"
-        width="350"
-        height="300"
-        style={{ border: 2 }}
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe> */}
+
       <iframe
         title="Google Maps"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.050714461669!2d-60.67189919999999!3d-33.002438399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7abf77650951b%3A0xcf71fb0346f699c3!2sS%C3%A1nchez%20de%20Bustamante%202732a%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1721064383408!5m2!1ses!2sar"
@@ -41,6 +32,7 @@ const Contact = () => {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
+      
     </div>
   );
 };
