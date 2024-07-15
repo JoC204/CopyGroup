@@ -44,7 +44,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
-          <a href="tel:+123456789">
+          <a href="tel:+54 9 341 839-5937">
             <FontAwesomeIcon icon={faPhone} />
           </a>
           <a href="https://maps.app.goo.gl/EEuTen5nKEMmZazo8" target="_blank" rel="noopener noreferrer">
@@ -53,9 +53,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-contact">
-        <p>
-          <FontAwesomeIcon icon={faEnvelope} /> email@example.com
-        </p>
+        <a href="mailto:control-copy@hotmail.com" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faEnvelope} /> control-copy@hotmail.com
+        </a>
       </div>
       <div className="footer-rights">
         <p>

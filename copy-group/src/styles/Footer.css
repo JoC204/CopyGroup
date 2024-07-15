@@ -37,11 +37,14 @@
 
 .footer-contact,
 .footer-rights {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+
 }
 
-.footer-contact p {
+.footer-contact a {
   margin: 0.5rem 0;
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer-rights {
