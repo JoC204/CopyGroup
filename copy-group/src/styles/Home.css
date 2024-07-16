@@ -1,99 +1,33 @@
-.style {
-    padding: 20px;
-    text-align: center;
-    overflow: hidden; /* Evita el desplazamiento interno */
-  }
-  
-  /* Imagen principal */
-  .style img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-  
-.img-portada{
-  margin-bottom: 2rem;
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-  /* Encabezado y párrafo */
-  /* .style h1 {
-    font-size: 2em;
-    margin: 20px 0;
-  }
+.img-portada {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.carousel-image {
+  margin-top: 0;
   
-  .style p {
-    font-size: 1em;
-    margin: 10px 0;
-  } */
-  .home-container {
-    /* padding: 20px; */
-    text-align: center;
-    overflow: hidden; /* Evita el desplazamiento interno */
-  }
-  
-  .img-portada {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 2rem;
-  }
-  
-  /* h1 {
-    font-size: 2em;
-    margin: 20px 0;
-  } */
-  
-  .link-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* margin: 0; */
-    /* transition: transform 0.3s ease; */
-  }
-  /* .link-cards-container:hover {
-    transform: scale(1.1);
-  } */
-   
-  
-  @media (max-width: 768px) {
-  
-    /* h1 {
-      font-size: 1.5em;
-    } */
-  }
-  
-  /* Media queries para dispositivos móviles */
-  @media (max-width: 768px) {
-    .style {
-      padding: 10px;
-    }
-  
-    /* .style h1 {
-      font-size: 1.5em;
-    }
-  
-    .style p {
-      font-size: 0.9em;
-    } */
-  }
-  
-  @media (max-width: 480px) {
-    .style {
-      padding: 5px;
-    }
-  
-    /* .style h1 {
-      font-size: 1.2em;
-    }
-  
-    .style p {
-      font-size: 0.8em;
-    } */
-  }
-  
-  @media (max-width: 480px) {
-  
-    /* h1 {
-      font-size: 1.2em;
-    } */
-  }
+  width: 100%;
+  height: auto;
+}
+
+.carousel-video {
+  width: 100%;
+  height: auto;
+}
+
+.link-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
