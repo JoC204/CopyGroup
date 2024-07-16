@@ -47,7 +47,7 @@ const Footer = () => {
           <a href="tel:+54 9 341 839-5937">
             <FontAwesomeIcon icon={faPhone} />
           </a>
-          <a href="https://maps.app.goo.gl/EEuTen5nKEMmZazo8" target="_blank" rel="noopener noreferrer">
+          <a href="https://maps.app.goo.gl/mt5Tfs9m1iaZMmGs6" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faMapMarkerAlt} />
           </a>
         </div>
