@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
-import Slider from 'react-slick';
 import ImageCarousel from '../components/ImageCarousel';
 import LinkCard from '../components/LinkCard';
 import "../styles/Home.css";
 import "../styles/Body-routes.css";
 import portadaHome from '../img/mesaPortada.png';
-import video1 from '../img/copy-serigrafia.mp4';
 import image1 from '../img/impresion-uno.jpg'; // Importa tus imágenes
 import image2 from '../img/impresion-dos.jpg';
 import image3 from '../img/calco-uno.jpg';
@@ -27,27 +25,11 @@ const Home = () => {
     { path: "/", image: image6, altText: "Otro", title: "Otro" },
   ];
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 9000,
-    fade: true,
-  };
-
   return (
     <div className='home-container'>
-      <Slider {...settings} className='img-portada'>
         <div>
           <img src={portadaHome} alt="Portada Home" className="carousel-image" />
         </div>
-        <div>
-          <video src={video1} autoPlay loop muted className="carousel-video"></video>
-        </div>
-      </Slider>
       <ImageCarousel />
       <div className="link-cards-container">
         {links.map((link, index) => (

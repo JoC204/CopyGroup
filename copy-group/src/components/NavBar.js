@@ -33,7 +33,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <RouterLink to="/">
-          <CopyLogo width="70px" height="auto" />
+          <CopyLogo width="80px" height="auto" />
         </RouterLink>
       </div>
       <div className="navbar-menu-icon" onClick={toggleMenu}>

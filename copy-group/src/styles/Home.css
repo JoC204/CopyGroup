@@ -8,20 +8,8 @@
 .img-portada {
   width: 100%;
   height: auto;
-  margin-top: 0;
+  margin-top: 2rem;
   margin-bottom: 20px;
-}
-
-.carousel-image {
-  margin-top: 0;
-  
-  width: 100%;
-  height: auto;
-}
-
-.carousel-video {
-  width: 100%;
-  height: auto;
 }
 
 .link-cards-container {
