@@ -1,0 +1,54 @@
+/* src/styles/FrontCarousel.css */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-image,
+  .carousel-video {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo adicional para dispositivos móviles */
+  @media (max-width: 600px) {
+    .carousel-container {
+      width: 100%;
+    }
+  
+    .carousel-image,
+    .carousel-video {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+  }
+  
+  /* Estilo adicional para tabletas y pantallas medianas */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .carousel-container {
+      width: 100%;
+    }
+  
+    .carousel-image,
+    .carousel-video {
+      width: 80%;
+      height: auto;
+    }
+  }
+  
+  /* Estilo adicional para pantallas grandes */
+  @media (min-width: 1025px) {
+    .carousel-container {
+      width: 100%;
+    }
+  
+    .carousel-image,
+    .carousel-video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

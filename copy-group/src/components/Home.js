@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import ImageCarousel from '../components/ImageCarousel';
+import FrontCarousel from '../components/ListMenu/FrontCarousel';
 import LinkCard from '../components/LinkCard';
 import "../styles/Home.css";
 import "../styles/Body-routes.css";
-import portadaHome from '../img/mesaPortada.png';
+// import portadaHome from '../img/mesaPortada.png';
 import image1 from '../img/impresion-uno.jpg'; // Importa tus imágenes
 import image2 from '../img/impresion-dos.jpg';
 import image3 from '../img/calco-uno.jpg';
@@ -27,9 +28,10 @@ const Home = () => {
 
   return (
     <div className='home-container'>
-        <div>
+        {/* <div>
           <img src={portadaHome} alt="Portada Home" className="carousel-image" />
-        </div>
+        </div> */}
+      <FrontCarousel />
       <ImageCarousel />
       <div className="link-cards-container">
         {links.map((link, index) => (
