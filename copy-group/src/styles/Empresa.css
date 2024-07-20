@@ -91,9 +91,9 @@
   .img-background {
     top: 5px;
     z-index: 1;
-    -webkit-animation: header-image-animation linear forwards;
+    /* -webkit-animation: header-image-animation linear forwards;
     animation: header-image-animation linear forwards;
-    animation-timeline: view();
+    animation-timeline: view(); */
   }
 
   .header-content {
