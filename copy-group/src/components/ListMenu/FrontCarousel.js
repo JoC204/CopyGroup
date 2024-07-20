@@ -27,7 +27,7 @@ const FrontCarousel = () => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container-front">
       <Slider {...settings}>
         <div>
           <img src={image1} alt="Slide 0" className="carousel-image" />
