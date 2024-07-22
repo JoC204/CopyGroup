@@ -10,30 +10,7 @@
 
 .logo-outer-circle {
   position: relative;
-  -webkit-animation: rotate 1s linear infinite;
-  animation: rotate 1s linear infinite;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-  -webkit-animation-delay: calc(var(--scroll) * -1s);
-  animation-delay: calc(var(--scroll) * -1s);
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-@-webkit-keyframes rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+  transition: transform 0.1s linear; /* Suaviza la rotación */
 }
 
 .logo-text {
@@ -49,7 +26,8 @@
     height: 60px;
   }
 
-  .logo-outer-circle, .logo-text {
+  .logo-outer-circle,
+  .logo-text {
     width: 100%;
     height: 100%;
   }
@@ -61,7 +39,8 @@
     height: 80px;
   }
 
-  .logo-outer-circle, .logo-text {
+  .logo-outer-circle,
+  .logo-text {
     width: 100%;
     height: 100%;
   }
@@ -73,7 +52,8 @@
     height: 100px;
   }
 
-  .logo-outer-circle, .logo-text {
+  .logo-outer-circle,
+  .logo-text {
     width: 100%;
     height: 100%;
   }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +8,7 @@ import { Link } from "../Links";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbarClass, setNavbarClass] = useState("navbar transparent");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,19 +19,24 @@ const NavBar = () => {
     window.location.pathname = path;
   };
 
-  window.addEventListener(
-    "scroll",
-    () => {
-      document.body.style.setProperty(
-        "--scroll",
-        window.pageYOffset / (document.body.offsetHeight - window.innerHeight)
-      );
-    },
-    false
-  );
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setNavbarClass("navbar solid");
+      } else {
+        setNavbarClass("navbar transparent");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className="navbar">
+    <nav className={navbarClass}>
       <div className="navbar-logo">
         <RouterLink to="/">
           <CopyLogo width="80px" height="auto" />
