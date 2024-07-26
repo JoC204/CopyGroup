@@ -6,9 +6,9 @@ import "../styles/Home.css";
 import "../styles/Body-routes.css";
 import "../styles/ImageCarousel.css";
 // import portadaHome from '../img/mesaPortada.png';
-import image1 from "../img/impresion-uno.jpg"; // Importa tus imágenes
-import image2 from "../img/impresion-dos.jpg";
-import image3 from "../img/calco-uno.jpg";
+import image1 from "../img/copyLogo2.png"; // Importa tus imágenes
+import image2 from "../img/servicio.jpg";
+import image3 from "../img/productos.jpg";
 import image4 from "../img/calco-dos.jpg";
 import image5 from "../img/ploteo-uno.jpg";
 import image6 from "../img/ploteo-dos.jpg";
@@ -21,25 +21,30 @@ const Home = () => {
   const links = [
     { path: "/empresa", image: image1, altText: "Empresa", title: "Empresa" },
     {
-      path: "/services",
+      path: "/digitalPrint",
       image: image2,
-      altText: "Servicios",
-      title: "Servicios",
+      altText: "Impresiones Digitales",
+      title: "Impresiones Digitales",
     },
     {
-      path: "/products",
+      path: "/serigrafia",
       image: image3,
-      altText: "Productos",
-      title: "Productos",
+      altText: "Serigrafia",
+      title: "Serigrafia",
     },
     {
-      path: "/materials",
+      path: "/rotulados",
       image: image4,
-      altText: "Materiales",
-      title: "Materiales",
+      altText: "Rotulados",
+      title: "Rotulados",
     },
-    { path: "/contact", image: image5, altText: "Contacto", title: "Contacto" },
-    { path: "/", image: image6, altText: "Otro", title: "Otro" },
+    {
+      path: "/impresionLona",
+      image: image5,
+      altText: "Impresiones en Lonas",
+      title: "Impresiones en Lonas",
+    },
+    { path: "/contact", image: image6, altText: "Contacto", title: "Contacto" },
   ];
 
   return (

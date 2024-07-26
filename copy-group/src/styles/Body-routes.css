@@ -1,20 +1,20 @@
-.Body-routes{
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    background-color: rgb(0, 0, 0);
+.Body-routes {
+  margin: 0; /* Margen del body para las galerias*/
+  padding: 0; /* Padding para el body*/
+  color: #fff;
+  background-color: rgb(0, 0, 0);
 }
-.Body-routes h1{
-    margin-top: 2rem;
-    font-size: 2rem;
-    font-weight: 700;
-    font-style: italic;
+.Body-routes h1 {
+  margin: 6rem 0 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
 }
 .Body-routes h2 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
 }
 .Body-routes h3 {
-    font-size: 1rem;
+  font-size: 1rem;
 }

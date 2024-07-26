@@ -7,6 +7,15 @@ import image6 from "../../img/6.jpg";
 import image7 from "../../img/impresion-uno.jpg";
 import image8 from "../../img/ploteo-dos.jpg";
 
-const ImgService = [image1, image2, image3, image4, image5, image6, image7, image8];
+const ImgDigital = [
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
+  image8,
+];
 
-export default ImgService;
+export default ImgDigital;

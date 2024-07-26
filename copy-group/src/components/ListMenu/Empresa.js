@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import imgBack from "../../img/background-empresa-movile.png";
 import imgDigital from "../../img/7.jpg";
-import imgSerigrafia from "../../img/impresion-uno.jpg";
-import imgRotulados from "../../img/ploteo-uno.jpg";
-import imgLonas from "../../img/ploteo-dos.jpg";
+import imgSerigrafia from "../../img/8.jpg";
+import imgRotulados from "../../img/11.jpg";
+import imgLonas from "../../img/9.jpg";
 import "../../styles/Empresa.css";
 import "../../styles/Body-routes.css";
 const Empresa = () => {
@@ -18,7 +18,7 @@ const Empresa = () => {
       if (imgRef.current) {
         const scrollY = window.scrollY;
         // const windowHeight = window.innerHeight;
-        const threshold = 400; // Umbral para el cambio de visibilidad
+        const threshold = 600; // Umbral para el cambio de visibilidad
         const progress = Math.min(scrollY / threshold, 1); // Progreso de 0 a 1 basado en el scroll
         const opacityValue = 1 - progress; // Opacidad de 1 a 0
         imgRef.current.style.opacity = opacityValue;
@@ -34,16 +34,16 @@ const Empresa = () => {
         const windowHeight = window.innerHeight;
 
         // Umbral para la animación de las imágenes de servicio
-        const threshold = windowHeight * 0.7; // Cambia el valor según tus necesidades
+        const threshold = windowHeight * 0.5; // Cambia el valor según tus necesidades
 
         if (entry.isIntersecting || scrollY < threshold) {
           // Imagen entrando en el viewport o aún no alcanzado el umbral
-          img.style.transition = "transform 0.9s, opacity 0.5s";
+          img.style.transition = "transform 1.2s, opacity 0.8s";
           img.style.transform = "scale(1)";
           img.style.opacity = "1";
         } else {
           // Imagen saliendo del viewport
-          img.style.transition = "transform 0.9s, opacity 0.5s";
+          img.style.transition = "transform 1.2s, opacity 0.8s";
           img.style.transform = "scale(0.5)";
           img.style.opacity = "0";
         }

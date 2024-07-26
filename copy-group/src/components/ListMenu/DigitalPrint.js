@@ -1,20 +1,21 @@
 import React, { useEffect } from 'react';
-import ImgService from "../DirImg/ImgService";
+import ImgDigital from "../DirImg/ImgDigital";
 // import '../../styles/Services.css';
 import '../../styles/Body-routes.css';
 import GalleryImg from '../GalleryImg';
 
-const Services = () => {
+const DigitalPrint
+ = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Desplazar a la parte superior
   }, []);
 
   return (
     <div>
-      <h1>Services</h1>
-      <GalleryImg imageUrls={ImgService} />
+      <h1>Impreciones Digitales</h1>
+      <GalleryImg imageUrls={ImgDigital} />
     </div>
   );
 };
 
-export default Services;
+export default DigitalPrint;

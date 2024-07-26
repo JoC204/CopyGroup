@@ -8,7 +8,7 @@ import image6 from "../../img/ploteo-uno.jpg";
 import image7 from "../../img/impresion-dos.jpg";
 import image8 from "../../img/impresion-dos.jpg";
 
-const ImgMaterials = [
+const ImgSerigrafia = [
   image1,
   image2,
   image3,
@@ -19,4 +19,4 @@ const ImgMaterials = [
   image8,
 ];
 
-export default ImgMaterials;
+export default ImgSerigrafia;

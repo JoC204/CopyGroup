@@ -8,12 +8,11 @@ import "./styles/Body-routes.css";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Empresa from "./components/ListMenu/Empresa";
-import Services from "./components/ListMenu/Services";
+import DigitalPrint from "./components/ListMenu/DigitalPrint";
 import Products from "./components/ListMenu/Products";
-import Materials from "./components/ListMenu/Materials";
-import Posters from "./components/ListMenu/Posters";
-import Plots from "./components/ListMenu/Plots";
-import Proyect from "./components/ListMenu/Proyect";
+import Serigrafia from "./components/ListMenu/Serigrafia";
+import Rotulados from "./components/ListMenu/Rotulados";
+import ImpresionLona from "./components/ListMenu/ImpresionLona";
 import Contact from "./components/ListMenu/Contact";
 import Footer from "./components/Footer";
 
@@ -28,12 +27,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} /> Default route
             <Route path="/empresa" element={<Empresa />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/digitalPrint" element={<DigitalPrint />} />
             <Route path="/products" element={<Products />} />
-            <Route path="/materials" element={<Materials />} />
-            <Route path="/posters" element={<Posters />} />
-            <Route path="/plots" element={<Plots />} />
-            <Route path="/proyect" element={<Proyect />} />
+            <Route path="/serigrafia" element={<Serigrafia />} />
+            <Route path="/rotulados" element={<Rotulados />} />
+            <Route path="/impresionLona" element={<ImpresionLona />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
