@@ -71,7 +71,7 @@ const Empresa = () => {
     // Añadir el evento de scroll para la imagen de fondo
     window.addEventListener("scroll", handleScroll);
 
-    // Llamar a la función de animación de la imagen de fondo al montar el componente
+    // Llama a la función de animación de la imagen de fondo al montar el componente
     handleScroll(); // Llamar para establecer el estado inicial de la imagen de fondo
 
     // Limpieza del observador y el evento de scroll cuando el componente se desmonta
@@ -138,7 +138,7 @@ const Empresa = () => {
               className="service-image"
             />
             <p>
-              Realizamos rotulados personalizados para vehículos, vidrieras y
+              Realizamos rotulados personalizados vidrieras y
               todo tipo de superficies, asegurando una presentación profesional
               y atractiva para su marca.
             </p>
@@ -158,7 +158,7 @@ const Empresa = () => {
             </p>
           </li>
         </ul>
-        <p>
+        <p className="compromiso">
           En Copy Group, nos comprometemos con la excelencia en cada proyecto,
           brindando un servicio integral que abarca desde el diseño hasta la
           entrega final del producto. Nuestro equipo de profesionales está

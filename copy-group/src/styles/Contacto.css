@@ -2,15 +2,13 @@
     display: flex;
     justify-content: center;
 }
-/* .infoContact h3{
-    margin: 2rem;
-    font-size: 2rem;
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-} */
-/* .contacto-container h1{
-    font-size: 4rem;
-} */
+.infoContact {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.infoContact a{
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit;   
+}
 

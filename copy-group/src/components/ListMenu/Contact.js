@@ -12,14 +12,13 @@ const Contact = () => {
   return (
     <div className="contacto-container">
       <h1>Contacto</h1>
-      {/* <div className="copyLogo">
-        <CopyLogo width="150px" height="auto" />
-      </div> */}
       <div className="infoContact">
         <p>Sanchez Bustamante 2732 A</p>
         <p>Tel: +54 9 341 839-5937</p>
         <p>Rosario - Santa Fe</p>
-        <p>Email: ejemplo@gmail.com</p>
+        <a href="mailto:control-copy@hotmail.com" target="_blank" rel="noopener noreferrer">
+          Email: control-copy@hotmail.com
+        </a>
       </div>
 
       <iframe

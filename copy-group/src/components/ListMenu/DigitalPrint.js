@@ -12,7 +12,7 @@ const DigitalPrint
 
   return (
     <div>
-      <h1>Impreciones Digitales</h1>
+      <h1>Impresiones Digitales</h1>
       <GalleryImg imageUrls={ImgDigital} />
     </div>
   );
