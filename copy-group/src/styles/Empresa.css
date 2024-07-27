@@ -2,7 +2,7 @@
   .empresa-content {
     overflow-x: hidden;
   }
- 
+
   .header {
     position: relative;
     height: 100vh;
@@ -14,7 +14,7 @@
     background-color: transparent;
     transition: transform 0.9s, opacity 0.5s;
   }
-  
+
   .img-background {
     position: absolute;
     top: 2px;
@@ -25,15 +25,15 @@
     transform: scale(1); /* Escala inicial */
     opacity: 1; /* Opacidad inicial */
   }
-  
+
   .service-image {
     width: 100%;
     height: auto;
     margin: 0;
     border-radius: 0.7rem;
-    transform: scale(0.5); /* Escala inicial */
-    opacity: 0; /* Opacidad inicial */
-    transition: transform 0.4s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
   }
 
   .header-content {

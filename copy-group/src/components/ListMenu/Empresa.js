@@ -6,6 +6,7 @@ import imgRotulados from "../../img/11.jpg";
 import imgLonas from "../../img/9.jpg";
 import "../../styles/Empresa.css";
 import "../../styles/Body-routes.css";
+
 const Empresa = () => {
   const imgRef = useRef(null); // Referencia para la imagen de fondo
   const serviceImagesRefs = useRef([]); // Referencias para las imágenes de servicios
@@ -17,66 +18,45 @@ const Empresa = () => {
     const handleScroll = () => {
       if (imgRef.current) {
         const scrollY = window.scrollY;
-        // const windowHeight = window.innerHeight;
         const threshold = 600; // Umbral para el cambio de visibilidad
         const progress = Math.min(scrollY / threshold, 1); // Progreso de 0 a 1 basado en el scroll
         const opacityValue = 1 - progress; // Opacidad de 1 a 0
         imgRef.current.style.opacity = opacityValue;
         imgRef.current.style.transform = `scale(${1 + progress * 2})`;
       }
-    };
 
-    // Función para animar las imágenes de servicio
-    const animateServiceImages = (entries) => {
-      entries.forEach((entry) => {
-        const img = entry.target;
-        const scrollY = window.scrollY;
-        const windowHeight = window.innerHeight;
+      // Obtener el alto de la ventana para cálculos de centro
+      const windowHeight = window.innerHeight;
 
-        // Umbral para la animación de las imágenes de servicio
-        const threshold = windowHeight * 0.5; // Cambia el valor según tus necesidades
+      // Animar imágenes de servicio al hacer scroll
+      serviceImagesRefs.current.forEach((img) => {
+        if (img) {
+          const imgRect = img.getBoundingClientRect();
+          const imgTop = imgRect.top + window.scrollY;
+          const imgCenter = imgTop + imgRect.height / 2;
+          const screenCenter = scrollY + windowHeight / 2;
 
-        if (entry.isIntersecting || scrollY < threshold) {
-          // Imagen entrando en el viewport o aún no alcanzado el umbral
-          img.style.transition = "transform 1.2s, opacity 0.8s";
-          img.style.transform = "scale(1)";
-          img.style.opacity = "1";
-        } else {
-          // Imagen saliendo del viewport
-          img.style.transition = "transform 1.2s, opacity 0.8s";
-          img.style.transform = "scale(0.5)";
-          img.style.opacity = "0";
+          // Calcular el progreso basado en la distancia del centro de la pantalla
+          const distanceFromCenter = Math.abs(screenCenter - imgCenter);
+          const maxDistance = windowHeight / 1; // Máxima distancia para el efecto
+          const progress = Math.max(0, 1 - distanceFromCenter / maxDistance);
+
+          // Aplicar transformaciones basadas en el progreso
+          img.style.transition = "transform 0.3s, opacity 0.3s";
+          img.style.transform = `scale(${0.8 + 0.2 * progress})`; // Escalar de 0.8 a 1.0
+          img.style.opacity = progress; // Opacidad de 0 a 1
         }
       });
     };
 
-    const observerOptions = {
-      threshold: [0.1, 0.5, 1], // Umbrales para activar la animación
-    };
-
-    const observer = new IntersectionObserver(
-      animateServiceImages,
-      observerOptions
-    );
-
-    // Observar cada imagen de servicio
-    serviceImagesRefs.current.forEach((img) => {
-      if (img) {
-        img.style.transform = "scale(0.5)";
-        img.style.opacity = "0";
-        observer.observe(img);
-      }
-    });
-
-    // Añadir el evento de scroll para la imagen de fondo
+    // Añadir el evento de scroll para la imagen de fondo y las imágenes de servicio
     window.addEventListener("scroll", handleScroll);
 
     // Llama a la función de animación de la imagen de fondo al montar el componente
     handleScroll(); // Llamar para establecer el estado inicial de la imagen de fondo
 
-    // Limpieza del observador y el evento de scroll cuando el componente se desmonta
+    // Limpieza del evento de scroll cuando el componente se desmonta
     return () => {
-      observer.disconnect();
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
