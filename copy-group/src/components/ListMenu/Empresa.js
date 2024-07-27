@@ -34,6 +34,7 @@ const Empresa = () => {
           const imgRect = img.getBoundingClientRect();
           const imgTop = imgRect.top + window.scrollY;
           const imgCenter = imgTop + imgRect.height / 2;
+          // eslint-disable-next-line no-restricted-globals
           const screenCenter = scrollY + windowHeight / 2;
 
           // Calcular el progreso basado en la distancia del centro de la pantalla
