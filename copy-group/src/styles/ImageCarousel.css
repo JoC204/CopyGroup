@@ -1,40 +1,75 @@
 .carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* Ajusta el tamaño según tus necesidades */
-    margin: 0 auto; /* Centrar el carrusel */
-    z-index: 10;   
-  }
-  
-  .carousel-image {
-    width: 100%;
-    height: auto; /* Ajusta la altura según tus necesidades */
-  }
-  
-  /* Estilos para las flechas */
-  .slick-prev, .slick-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: white;
-    /* font-size: 2rem; */
-    z-index: 20;
-    opacity: 0; /* Hacer las flechas invisibles */
-    transition: opacity 0.9s ease;
-  }
-  
-  .slick-prev {
-    left: 10px;
-  }
-  
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Ensure it takes full width on all screens */
+  margin: 2rem auto;
+  z-index: 10;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para las flechas */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: white;
+  z-index: 20;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.carousel-container:hover .slick-prev,
+.carousel-container:hover .slick-next {
+  opacity: 1;
+}
+
+/* Responsive styles for different screen sizes */
+
+/* Small devices (phones, 480px and below) */
+@media (max-width: 480px) {
+  .slick-prev,
   .slick-next {
-    right: 10px;
+    font-size: 1.5rem;
+    left: 5px;
+    right: 5px;
   }
-  
-  .carousel-container:hover .slick-prev,
-  .carousel-container:hover .slick-next {
-    opacity: 1; /* Hacer las flechas visibles al pasar el cursor por encima */
+}
+
+/* Medium devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 1.75rem;
   }
-  
+}
+
+/* Large devices (laptops, 992px and below) */
+@media (max-width: 1200px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 2rem;
+  }
+}
+
+/* Extra large devices (desktops, 1600px and below) */
+@media (max-width: 1600px) {
+  .slick-prev,
+  .slick-next {
+    font-size: 2.25rem;
+  }
+}

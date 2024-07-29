@@ -1,5 +1,4 @@
-// src/components/ImageCarousel.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -19,21 +18,40 @@ import image10 from '../img/11.jpg';
 const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10];
 
 const ImageCarousel = () => {
+  const [slidesToShow, setSlidesToShow] = useState(4);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setSlidesToShow(4); // Mobile: 4 images
+      } else {
+        setSlidesToShow(8); // Desktop: 8 images
+      }
+    };
+
+    // Initialize the number of slides
+    handleResize();
+
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
     speed: 1500,
-    slidesToShow: 4, // Cantidad de imagenes en pantalla
+    slidesToShow, // Use the state value for slidesToShow
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
-    // fade: true,
-    ltl: true, // Desplazamiento de derecha a izquierda
     arrows: true,
-    pauseOnHover: false, // Desactiva pausa al pasar el cursor
-    pauseOnFocus: false, // Desactiva pausa al enfocar el carrusel
-    pauseOnDotsHover: false, // Desactiva pausa al pasar el cursor sobre los puntos de navegación
-    cssEase: "linear"
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    pauseOnDotsHover: false,
+    cssEase: 'linear',
   };
 
   return (
