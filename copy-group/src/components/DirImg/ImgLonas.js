@@ -6,6 +6,7 @@ import image5 from "../../img/ploteo-dos.jpg";
 import image6 from "../../img/ploteo-uno.jpg";
 import image7 from "../../img/impresion-dos.jpg";
 import image8 from "../../img/impresion-dos.jpg";
+import image9 from "../../img/impresion-dos.jpg";
 
 const ImgLonas = [
   image1,
@@ -16,6 +17,7 @@ const ImgLonas = [
   image6,
   image7,
   image8,
+  image9,
 ];
 
 export default ImgLonas;

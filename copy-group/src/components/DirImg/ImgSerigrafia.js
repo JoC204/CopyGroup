@@ -7,6 +7,7 @@ import image5 from "../../img/Serigrafia/005.jpg";
 import image6 from "../../img/Serigrafia/006.jpg";
 import image7 from "../../img/Serigrafia/007.jpg";
 import image8 from "../../img/Serigrafia/008.jpg";
+import image9 from "../../img/Serigrafia/008.jpg";
 
 const ImgSerigrafia = [
   image1,
@@ -17,6 +18,7 @@ const ImgSerigrafia = [
   image6,
   image7,
   image8,
+  image9,
 ];
 
 export default ImgSerigrafia;
