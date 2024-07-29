@@ -21,7 +21,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
+      if (window.scrollY > 50) {
         setNavbarClass("navbar solid");
       } else {
         setNavbarClass("navbar transparent");

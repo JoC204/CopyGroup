@@ -1,5 +1,8 @@
 /* src/styles/GalleryImg.css */
-.gallery {
+
+/* Estilos para pantallas pequeñas (max-width: 600px) */
+@media (max-width: 600px) {
+  .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -7,8 +10,26 @@
   }
   
   .gallery img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
+    border-radius: 5px;
+  }
+}
+
+/* Estilos para pantallas grandes (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Puedes ajustar el espacio entre imágenes */
+    justify-content: center;
   }
   
+  .gallery img {
+    width: 25rem;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+  }
+}
