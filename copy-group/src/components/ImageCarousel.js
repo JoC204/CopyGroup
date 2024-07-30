@@ -43,11 +43,11 @@ const ImageCarousel = () => {
     dots: false,
     infinite: true,
     speed: 1500,
-    slidesToShow, // Use the state value for slidesToShow
+    slidesToShow, // Utilice el valor de estado para slidesToShow
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
-    arrows: true,
+    arrows: false,
     pauseOnHover: false,
     pauseOnFocus: false,
     pauseOnDotsHover: false,

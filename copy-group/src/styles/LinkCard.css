@@ -1,88 +1,66 @@
+/* src/styles/LinkCard.css */
+
+/* Estilos base para .link-card-container */
 .link-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* margin: -1rem; */
+  gap: 5px; /* Espacio entre tarjetas */
+  padding: 10px;
 }
 
+/* Estilos para .link-card */
 .link-card {
-  flex: 1 1 calc(40% - 2rem);
+  flex: 1 1 20rem; /* Ancho base de las tarjetas */
+  max-width: 20rem;
   margin: 1rem;
   text-align: center;
   border-radius: 8px;
   overflow: hidden;
-  position: relative; /* Necesario para posicionar el título */
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-card-link {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .link-card-image {
   width: 100%;
   height: auto;
+  display: block;
   transition: transform 0.3s ease;
 }
 
-.link-card-link::after {
-  content: '';
-  position: absolute;
-  top: -3;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.109);
-  transition: background-color 0.3s ease;
-  z-index: -1; /* Asegura que la capa esté detrás de la imagen */
+/* Efecto hover para .link-card */
+.link-card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al hacer hover */
+  box-shadow: 0 8px 16px rgba(184, 178, 178, 0.2); /* Aumenta la sombra al hacer hover */
 }
 
-.link-card-link:hover::after {
-  background-color: transparent;
+/* Media queries para adaptabilidad */
+
+/* Estilos para pantallas pequeñas (max-width: 600px) */
+@media (max-width: 600px) {
+  .link-card {
+    flex: 1 1 calc(10rem - 2rem); /* Tarjetas ocupan todo el ancho disponible */
+    margin: 1rem 0;
+  }
 }
 
-.link-card-link:hover .link-card-image {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.774);
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen al hacer hover */
+/* Estilos para pantallas medianas (min-width: 600px) */
+@media (min-width: 600px) and (max-width: 1200px) {
+  .link-card {
+    flex: 1 1 calc(45% - 2rem); /* Ajusta el tamaño de las tarjetas para pantallas medianas */
+  }
 }
 
-.link-card-title {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2em; /* Tamaño grande */
-  color: white;
-  text-shadow: #384c6c 3px 3px 2px;
-  padding: 0.5rem 1rem;
-  transition: all 0.5s ease;
-  z-index: 5; /* Asegura que el título esté por encima de la imagen */
-}
-
-.link-card-link:hover .link-card-title {
-  transform: none;
-  font-size: 1em; /* Tamaño reducido */
-  text-shadow: #384c6c 3px 3px 2px;
-}
-
-.go-corner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 2em;
-  height: 2em;
-  overflow: hidden;
-  top: 0;
-  right: 0;
-  background: linear-gradient(135deg, #6293c8, #384c6c);
-  border-radius: 0 4px 0 32px;
-  transition: transform 0.3s ease;
-}
-.go-corner:hover {
-  transform: scale(1.1);
-}
-.go-arrow {
-  font-size: 26px;
-  font-weight: 900;
-  margin-top: -10px;
-  margin-right: -4px;
-  color: white;
-  font-family: courier, sans;
+/* Estilos para pantallas grandes (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .link-card {
+    flex: 1 1 20rem; /* Ajusta el tamaño de las tarjetas para pantallas grandes */
+  }
 }

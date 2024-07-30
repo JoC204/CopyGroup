@@ -6,7 +6,7 @@ import "../styles/Home.css";
 import "../styles/Body-routes.css";
 import "../styles/ImageCarousel.css";
 // import portadaHome from '../img/mesaPortada.png';
-import image1 from "../img/copyLogo2.png"; // Importa tus imágenes
+import image1 from "../img/links/empresa.jpg"; // Importa tus imágenes
 import image2 from "../img/servicio.jpg";
 import image3 from "../img/productos.jpg";
 import image4 from "../img/calco-dos.jpg";

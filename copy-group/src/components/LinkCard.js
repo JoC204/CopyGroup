@@ -10,10 +10,6 @@ const LinkCard = ({ path, image, altText, title }) => {
     <div className='link-card'>
       <RouterLink to={path} className='link-card-link'>
         <img src={image} alt={altText} className='link-card-image' />
-        <div className='link-card-title'>{title}</div>
-        <div className='go-corner'>
-          <div className='go-arrow'>→</div>
-        </div>
       </RouterLink>
     </div>
   );
