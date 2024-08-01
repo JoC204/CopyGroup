@@ -1,15 +1,15 @@
 // src/components/LinkCard.js
-import React from 'react';
-import { Link as RouterLink } from 'react-router-dom';
-import '../styles/LinkCard.css';
+import React from "react";
+import { Link as RouterLink } from "react-router-dom";
+import "../styles/tarjeta.css";
 
-const LinkCard = ({ path, image, altText, title }) => {
-
-  
+const LinkCard = ({ path, color, title }) => {
   return (
-    <div className='link-card'>
-      <RouterLink to={path} className='link-card-link'>
-        <img src={image} alt={altText} className='link-card-image' />
+    <div className={`card ${color}`}>
+      <RouterLink to={path} className="card-link">
+        <div>
+          <p className="tip">{title}</p>
+        </div>
       </RouterLink>
     </div>
   );

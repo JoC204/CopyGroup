@@ -1,0 +1,148 @@
+/* src/styles/tarjeta.css */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: transform 400ms, filter 400ms;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none; /* No underline for text */
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.card p.second-text {
+  font-size: 0.7em;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* Colores para cada tarjeta */
+.red {
+  background-color: #f43f5e;
+}
+
+.blue {
+  background-color: #5f9ed2;
+}
+
+.green {
+  background-color: #22c55e;
+}
+
+.yellow {
+  background-color: #d1c702;
+}
+
+.purple {
+  background-color: #b8207d;
+}
+
+.black {
+  background-color: #272526;
+}
+
+/* Media Queries para diferentes resoluciones */
+
+/* Móviles pequeños (menor a 600px) */
+@media (max-width: 599px) {
+  .cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+    height: 80px;
+  }
+
+  .card p.tip {
+    font-size: 0.9em;
+  }
+}
+
+/* Tablets y móviles grandes (entre 600px y 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 45%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Escritorio (entre 900px y 1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 30%;
+    height: 120px;
+  }
+
+  .card p.tip {
+    font-size: 1em;
+  }
+}
+
+/* Pantallas grandes (1200px o más) */
+@media (min-width: 1200px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 35%;
+    height: 100px;
+  }
+
+  .card p.tip {
+    font-size: 1.2em;
+  }
+}
