@@ -15,6 +15,9 @@
   /* Estilo adicional para dispositivos móviles */
   @media (max-width: 600px) {
     .carousel-container-front {
+        width: 100%;
+    }
+    .carousel-video {
         display: none;
     }
   }

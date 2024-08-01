@@ -9,7 +9,6 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Empresa from "./components/ListMenu/Empresa";
 import DigitalPrint from "./components/ListMenu/DigitalPrint";
-import Products from "./components/ListMenu/Products";
 import Serigrafia from "./components/ListMenu/Serigrafia";
 import Rotulados from "./components/ListMenu/Rotulados";
 import ImpresionLona from "./components/ListMenu/ImpresionLona";
@@ -28,7 +27,6 @@ function App() {
             <Route path="/" element={<Home />} /> Default route
             <Route path="/empresa" element={<Empresa />} />
             <Route path="/digitalPrint" element={<DigitalPrint />} />
-            <Route path="/products" element={<Products />} />
             <Route path="/serigrafia" element={<Serigrafia />} />
             <Route path="/rotulados" element={<Rotulados />} />
             <Route path="/impresionLona" element={<ImpresionLona />} />
