@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import imgBack from "../../img/background-empresa-movile.png";
+import imgBack from "../../img/background-empresa.jpg";
 import imgDigital from "../../img/7.jpg";
 import imgSerigrafia from "../../img/8.jpg";
 import imgRotulados from "../../img/11.jpg";

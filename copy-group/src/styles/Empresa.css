@@ -76,15 +76,17 @@
   }
 }
 
-@media (min-width: 100px) {
+@media (max-width: 1600px) {
   .empresa-content {
     overflow-x: hidden;
   }
   .header-content {
     padding: 10px;
+    
   }
 
   .img-background {
+    
     transform: scale(0.5);
     transform: opacity 0.3s;
     z-index: 1;
