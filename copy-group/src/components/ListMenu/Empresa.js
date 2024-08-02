@@ -72,7 +72,7 @@ const Empresa = () => {
           className="img-background"
         />
         <div className="header-content">
-          <h1>Copy Group</h1>
+          <h1>COPYGROUP</h1>
           <p>
             En Copy Group, nos especializamos en ofrecer soluciones de impresión
             de alta calidad adaptadas a las necesidades de nuestros clientes.
