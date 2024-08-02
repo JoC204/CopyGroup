@@ -5,7 +5,7 @@ import imgSerigrafia from "../../img/8.jpg";
 import imgRotulados from "../../img/11.jpg";
 import imgLonas from "../../img/9.jpg";
 import "../../styles/Empresa.css";
-import "../../styles/Body-routes.css";
+// import "../../styles/Body-routes.css";
 
 const Empresa = () => {
   const imgRef = useRef(null); // Referencia para la imagen de fondo
@@ -72,7 +72,7 @@ const Empresa = () => {
           className="img-background"
         />
         <div className="header-content">
-          <h1>COPYGROUP</h1>
+          <h1 className="header-title">COPYGROUP</h1>
           <p>
             En Copy Group, nos especializamos en ofrecer soluciones de impresión
             de alta calidad adaptadas a las necesidades de nuestros clientes.
@@ -97,7 +97,7 @@ const Empresa = () => {
             </p>
           </li>
           <li>
-            <h3>Serigrafía:</h3>
+            <h3>Serigrafía</h3>
             <img
               ref={(el) => (serviceImagesRefs.current[1] = el)}
               src={imgSerigrafia}
@@ -111,7 +111,7 @@ const Empresa = () => {
             </p>
           </li>
           <li>
-            <h3>Rotulados:</h3>
+            <h3>Rotulados</h3>
             <img
               ref={(el) => (serviceImagesRefs.current[2] = el)}
               src={imgRotulados}
@@ -119,13 +119,13 @@ const Empresa = () => {
               className="service-image"
             />
             <p>
-              Realizamos rotulados personalizados vidrieras y
-              todo tipo de superficies, asegurando una presentación profesional
-              y atractiva para su marca.
+              Realizamos rotulados personalizados vidrieras y todo tipo de
+              superficies, asegurando una presentación profesional y atractiva
+              para su marca.
             </p>
           </li>
           <li>
-            <h3>Impresiones en Lonas:</h3>
+            <h3>Impresiones en Lonas</h3>
             <img
               ref={(el) => (serviceImagesRefs.current[3] = el)}
               src={imgLonas}

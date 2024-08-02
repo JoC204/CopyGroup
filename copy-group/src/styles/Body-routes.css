@@ -1,11 +1,10 @@
-.Body-routes {
-  margin: 0; /* Margen del body para las galerias*/
+.Body-routes { /* Margen del body para las galerias*/
   padding: 0; /* Padding para el body*/
   color: #fff;
   background-color: rgb(0, 0, 0);
 }
 .Body-routes h1 {
-  margin: 8rem 0 2rem 0;
+  margin: 0 0 2rem 0;
   font-size: 2rem;
   font-weight: 700;
   font-style: italic;
@@ -17,4 +16,8 @@
 }
 .Body-routes h3 {
   font-size: 1.5rem;
+}
+.rutes-h1 {
+  height: 9rem;
+  background-color: transparent;
 }

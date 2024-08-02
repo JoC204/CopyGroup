@@ -11,6 +11,7 @@ const ImpresionLona
 
   return (
     <div>
+      <div className='rutes-h1'></div>
       <h1>Impresion en Lonas</h1>
       <GalleryImg imageUrls={ImgLonas} />
     </div>

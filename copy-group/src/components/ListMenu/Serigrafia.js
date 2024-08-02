@@ -10,6 +10,7 @@ const Serigrafia = () => {
 
   return (
     <div className="body-routes">
+      <div className='rutes-h1'></div>
       <h1>Serigrafía</h1>
       <GalleryImg imageUrls={ImgSerigrafia} />
     </div>

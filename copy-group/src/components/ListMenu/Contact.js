@@ -11,6 +11,7 @@ const Contact = () => {
 
   return (
     <div className="contacto-container">
+      <div className='rutes-h1'></div>
       <h1>Contacto</h1>
       <div className="infoContact">
         <p>Sanchez Bustamante 2732 A</p>

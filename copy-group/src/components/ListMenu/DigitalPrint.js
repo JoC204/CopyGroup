@@ -12,6 +12,7 @@ const DigitalPrint
 
   return (
     <div>
+      <div className='rutes-h1'></div>
       <h1>Impresiones Digitales</h1>
       <GalleryImg imageUrls={ImgDigital} />
     </div>

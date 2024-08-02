@@ -10,7 +10,8 @@ const Rotulados = () => {
   }, []);
 
   return (
-    <div className="body-routes">
+    <div>
+      <div className='rutes-h1'></div>
       <h1>Rotulados</h1>
       <GalleryImg imageUrls={ImgRotulados} />
     </div>
