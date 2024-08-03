@@ -14,11 +14,6 @@ const NavBar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleItemClick = (path) => {
-    setIsOpen(false);
-    window.location.pathname = path;
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -47,11 +42,7 @@ const NavBar = () => {
       </div>
       <ul className={`navbar-menu ${isOpen ? "open" : ""}`}>
         {Link.map((link, index) => (
-          <li
-            key={index}
-            className="navbar-item"
-            onClick={() => handleItemClick(link.path)}
-          >
+          <li key={index} className="navbar-item">
             <RouterLink to={link.path} onClick={toggleMenu}>
               {link.label}
             </RouterLink>

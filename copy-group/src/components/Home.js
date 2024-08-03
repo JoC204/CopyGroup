@@ -5,7 +5,7 @@ import LinkCard from "../components/LinkCard";
 import "../styles/Home.css";
 import "../styles/Body-routes.css";
 import "../styles/ImageCarousel.css";
-// import portadaHome from '../img/mesaPortada.png';
+
 
 const Home = () => {
   useEffect(() => {
