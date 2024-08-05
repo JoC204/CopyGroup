@@ -11,13 +11,17 @@ const Contact = () => {
 
   return (
     <div className="contacto-container">
-      <div className='rutes-h1'></div>
+      <div className="rutes-h1"></div>
       <h1>Contacto</h1>
       <div className="infoContact">
         <p>Sanchez Bustamante 2732 A</p>
         <p>Tel: +54 9 341 839-5937</p>
         <p>Rosario - Santa Fe</p>
-        <a href="mailto:control-copy@hotmail.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="mailto:control-copy@hotmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Email: control-copy@hotmail.com
         </a>
       </div>
@@ -28,11 +32,10 @@ const Contact = () => {
         width="300"
         height="300"
         style={{ border: 2 }}
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
-      
     </div>
   );
 };
