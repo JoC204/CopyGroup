@@ -1,8 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import router components
-// import { Link } from './Links'; // Import Link for navigation
-// import PresentationImage from './components/PresentationImage';
-// import CopyLogo from './components/CopyLogo';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
 import "./styles/Body-routes.css";
 import NavBar from "./components/NavBar";

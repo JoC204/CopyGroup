@@ -18,7 +18,7 @@ const Empresa = () => {
     const handleScroll = () => {
       if (imgRef.current) {
         const scrollY = window.scrollY;
-        const threshold = 600; // Umbral para el cambio de visibilidad
+        const threshold = 500; // Umbral para el cambio de visibilidad
         const progress = Math.min(scrollY / threshold, 1); // Progreso de 0 a 1 basado en el scroll
         const opacityValue = 1 - progress; // Opacidad de 1 a 0
         imgRef.current.style.opacity = opacityValue;
@@ -33,7 +33,7 @@ const Empresa = () => {
         if (img) {
           const imgRect = img.getBoundingClientRect();
           const imgTop = imgRect.top + window.scrollY;
-          const imgCenter = imgTop + imgRect.height / 2;
+          const imgCenter = imgTop + imgRect.height / 1;
           // eslint-disable-next-line no-restricted-globals
           const screenCenter = scrollY + windowHeight / 2;
 
@@ -44,7 +44,7 @@ const Empresa = () => {
 
           // Aplicar transformaciones basadas en el progreso
           img.style.transition = "transform 0.3s, opacity 0.3s";
-          img.style.transform = `scale(${0.8 + 0.2 * progress})`; // Escalar de 0.8 a 1.0
+          img.style.transform = `scale(${0.9 + 0.2 * progress})`; // Escalar de 0.8 a 1.0
           img.style.opacity = progress; // Opacidad de 0 a 1
         }
       });
@@ -72,7 +72,7 @@ const Empresa = () => {
           className="img-background"
         />
         <div className="header-content">
-          <h1 className="header-title">COPYGROUP</h1>
+          {/* <h1 className="header-title">COPYGROUP</h1> */}
           <p>
             En Copy Group, nos especializamos en ofrecer soluciones de impresión
             de alta calidad adaptadas a las necesidades de nuestros clientes.
@@ -119,7 +119,7 @@ const Empresa = () => {
               className="service-image"
             />
             <p>
-              Realizamos rotulados personalizados vidrieras y todo tipo de
+              Realizamos rotulados personalizados para vidrieras y todo tipo de
               superficies, asegurando una presentación profesional y atractiva
               para su marca.
             </p>
@@ -140,7 +140,7 @@ const Empresa = () => {
           </li>
         </ul>
         <p className="compromiso">
-          En Copy Group, nos comprometemos con la excelencia en cada proyecto,
+          Estamos comprometidos con la excelencia en cada proyecto,
           brindando un servicio integral que abarca desde el diseño hasta la
           entrega final del producto. Nuestro equipo de profesionales está
           dedicado a asegurar que cada impresión cumpla con los más altos
