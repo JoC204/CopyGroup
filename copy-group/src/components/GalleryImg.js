@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-// src/components/GalleryImg.js
 import React from "react";
 import LazyLoad from "react-lazyload";
 import "../styles/GalleryImg.css"; // Importar estilos si es necesario
