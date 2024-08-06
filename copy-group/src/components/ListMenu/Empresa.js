@@ -72,7 +72,6 @@ const Empresa = () => {
           className="img-background"
         />
         <div className="header-content">
-          {/* <h1 className="header-title">COPYGROUP</h1> */}
           <p>
             En Copy Group, nos especializamos en ofrecer soluciones de impresión
             de alta calidad adaptadas a las necesidades de nuestros clientes.
@@ -90,7 +89,7 @@ const Empresa = () => {
               alt="Impresiones Digitales"
               className="service-image"
             />
-            <p>
+            <p className="parrafo">
               Contamos con la más avanzada tecnología en impresión digital para
               ofrecer resultados precisos y de alta definición en una amplia
               variedad de materiales.
@@ -104,7 +103,7 @@ const Empresa = () => {
               alt="Serigrafía"
               className="service-image"
             />
-            <p>
+            <p className="parrafo">
               Ofrecemos servicios de serigrafía para producir impresiones
               duraderas y de alta calidad en textiles, plásticos, metales y
               otros soportes.
@@ -118,7 +117,7 @@ const Empresa = () => {
               alt="Rotulados"
               className="service-image"
             />
-            <p>
+            <p className="parrafo">
               Realizamos rotulados personalizados para vidrieras y todo tipo de
               superficies, asegurando una presentación profesional y atractiva
               para su marca.
@@ -132,7 +131,7 @@ const Empresa = () => {
               alt="Lonas"
               className="service-image"
             />
-            <p>
+            <p className="parrafo">
               Producimos lonas publicitarias y decorativas con impresiones
               resistentes y vibrantes, ideales para eventos, promociones y
               decoración de espacios.
