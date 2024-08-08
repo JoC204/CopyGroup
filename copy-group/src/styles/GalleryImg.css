@@ -1,3 +1,4 @@
+
 /* src/styles/GalleryImg.css */
 
 /* Estilos para pantallas pequeñas (max-width: 600px) */
@@ -10,7 +11,7 @@
   }
 
   .gallery img {
-    width: 100%; /* Tamaño de imagenes */
+    width: 100%; /* Tamaño de imágenes */
     height: auto;
     display: block;
     border-radius: 5px;
@@ -27,11 +28,12 @@
   }
 
   .gallery img {
-    width: 25rem; /* Tamaño de imagenes */
+    width: 25rem; /* Tamaño de imágenes */
     height: auto;
     display: block;
     border-radius: 5px;
   }
+  
 }
 
 @media (min-width: 1921px) and (max-width: 2700px) {
@@ -43,9 +45,93 @@
   }
 
   .gallery img {
-    width: 50rem; /* Tamaño de imagenes */
+    width: 50rem; /* Tamaño de imágenes */
     height: auto;
     display: block;
     border-radius: 5px;
+  }
+  
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.02);
+}
+
+.fullscreen-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo negro transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  border: 5px solid white; /* Borde blanco para la imagen en pantalla completa */
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+  scale: 1.3;
+}
+
+.fullscreen-image.zoomed {
+  transform: scale(2.5); /* Zoom para la imagen */
+  cursor: zoom-out; /* Cambiar el cursor a zoom-out cuando está ampliada */
+}
+
+.close-button,
+.prev-button,
+.next-button {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.close-button {
+  top: 20px;
+  right: 350px; /* Mover más cerca de la imagen */
+  scale: 1.5;
+}
+
+.prev-button {
+  left: 100px; /* Mover más cerca de la imagen */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.next-button {
+  right: 100px; /* Mover más cerca de la imagen */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Ocultar el visualizador de pantalla completa en dispositivos móviles y tabletas */
+@media (max-width: 1024px) {
+  .fullscreen-view {
+    display: none;
   }
 }
