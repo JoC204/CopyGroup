@@ -8,6 +8,7 @@ import image7 from "../../img/impresion-uno.jpg";
 import image8 from "../../img/copyLogo2.png";
 import image9 from "../../img/mesaPortada.png";
 
+
 const ImgDigital = [
   image1,
   image2,
@@ -17,7 +18,7 @@ const ImgDigital = [
   image6,
   image7,
   image8,
-  image9,
+  image9, 
 ];
 
 export default ImgDigital;
