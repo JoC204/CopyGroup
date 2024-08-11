@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
-  faFacebook,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -31,13 +30,6 @@ const Footer = () => {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faFacebook} />
-          </a>
-          <a
             href="https://wa.me/123456789"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,13 +39,21 @@ const Footer = () => {
           <a href="tel:+54 9 341 839-5937">
             <FontAwesomeIcon icon={faPhone} />
           </a>
-          <a href="https://maps.app.goo.gl/mt5Tfs9m1iaZMmGs6" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://maps.app.goo.gl/mt5Tfs9m1iaZMmGs6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faMapMarkerAlt} />
           </a>
         </div>
       </div>
       <div className="footer-contact">
-        <a href="mailto:control-copy@hotmail.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="mailto:control-copy@hotmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faEnvelope} /> control-copy@hotmail.com
         </a>
       </div>

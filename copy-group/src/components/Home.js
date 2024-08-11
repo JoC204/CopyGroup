@@ -18,26 +18,26 @@ const Home = () => {
     { path: "/empresa", 
       color: "blue",
       title: "Empresa" },
+      {
+        path: "/serigrafia",
+        color: "purple",
+        title: "Serigrafia",
+      },
     {
       path: "/digitalPrint",
-      color: "purple",
+      color: "black",
       title: "Impresiones Digitales",
     },
-    {
-      path: "/serigrafia",
-      color: "red",
-      title: "Serigrafia",
-    },
-    {
-      path: "/rotulados",
-      color: "green",
-      title: "Rotulados",
-    },
-    {
-      path: "/impresionLona",
-      color: "black",
-      title: "Impresiones en Lonas",
-    },
+    // {
+    //   path: "/rotulados",
+    //   color: "green",
+    //   title: "Rotulados",
+    // },
+    // {
+    //   path: "/impresionLona",
+    //   color: "red",
+    //   title: "Impresiones en Lonas",
+    // },
     { path: "/contact", 
       color: "yellow", 
       title: "Contacto" },

@@ -1,8 +1,18 @@
 import React, { useEffect } from "react";
-// import CopyLogo from "../CopyLogo";
 import "../../styles/Contacto.css";
 import "../../styles/index.css";
 import "../../styles/Body-routes.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+  faPhone,
+  // faEnvelope,
+  faMapMarkerAlt,
+  // faCopyright,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   useEffect(() => {
@@ -14,7 +24,38 @@ const Contact = () => {
       <div className="rutes-h1"></div>
       <h1>Contacto</h1>
       <div className="infoContact">
-        <p>Sanchez Bustamante 2732 A</p>
+        
+            <a
+              href="https://www.instagram.com/copy.group?igsh=OXV1eXNkdGlncW5n"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="logoContact"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a
+              href="https://wa.me/123456789"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="logoContact"
+            >
+              <FontAwesomeIcon icon={faWhatsapp} />
+            </a>
+            <a href="tel:+54 9 341 839-5937"
+               className="logoContact"
+            >
+              <FontAwesomeIcon icon={faPhone} />
+            </a>
+            <a
+              href="https://maps.app.goo.gl/mt5Tfs9m1iaZMmGs6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="logoContact"
+            >
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+            </a>
+          
+        <p>Sanchez de Bustamante 2732a</p>
         <p>Tel: +54 9 341 839-5937</p>
         <p>Rosario - Santa Fe</p>
         <a

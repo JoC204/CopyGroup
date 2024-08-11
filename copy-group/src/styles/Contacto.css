@@ -1,14 +1,18 @@
-.copyLogo{
-    display: flex;
-    justify-content: center;
+.copyLogo {
+  display: flex;
+  justify-content: center;
 }
 .infoContact {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
-.infoContact a{
-    text-decoration: none; /* Elimina el subrayado */
-    color: inherit;   
+.infoContact a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit;
 }
 
+.infoContact .logoContact {
+    margin: 2rem;
+    font-size: 1rem;
+}

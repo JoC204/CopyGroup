@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import imgBack from "../../img/background-empresa.jpg";
-import imgDigital from "../../img/7.jpg";
-import imgSerigrafia from "../../img/8.jpg";
+import imgSerigrafia from "../../img/Serigrafia/008.jpg";
+import imgDigital from "../../img/imp-digitales/006.jpg";
 import imgRotulados from "../../img/11.jpg";
 import imgLonas from "../../img/9.jpg";
 import "../../styles/Empresa.css";
@@ -73,28 +73,13 @@ const Empresa = () => {
         />
         <div className="header-content">
           <p>
-            En Copy Group, nos especializamos en ofrecer soluciones de impresión
-            de alta calidad adaptadas a las necesidades de nuestros clientes.
+            Con una trayectoria de más de 30 años, en Copy Group, nos especializamos en ofrecer soluciones de impresión y serigrafía de alta calidad, adaptadas a las necesidades de nuestros clientes.  
           </p>
         </div>
       </div>
       <div className="services-content">
         <h2>Nuestros Servicios</h2>
         <ul>
-          <li>
-            <h3>Impresiones Digitales</h3>
-            <img
-              ref={(el) => (serviceImagesRefs.current[0] = el)}
-              src={imgDigital}
-              alt="Impresiones Digitales"
-              className="service-image"
-            />
-            <p className="parrafo">
-              Contamos con la más avanzada tecnología en impresión digital para
-              ofrecer resultados precisos y de alta definición en una amplia
-              variedad de materiales.
-            </p>
-          </li>
           <li>
             <h3>Serigrafía</h3>
             <img
@@ -107,6 +92,20 @@ const Empresa = () => {
               Ofrecemos servicios de serigrafía para producir impresiones
               duraderas y de alta calidad en textiles, plásticos, metales y
               otros soportes.
+            </p>
+          </li>
+          <li>
+            <h3>Impresiones Digitales</h3>
+            <img
+              ref={(el) => (serviceImagesRefs.current[0] = el)}
+              src={imgDigital}
+              alt="Impresiones Digitales"
+              className="service-image"
+            />
+            <p className="parrafo">
+              Contamos con la más avanzada tecnología en impresión digital para
+              ofrecer resultados precisos y de alta definición en una amplia
+              variedad de materiales.
             </p>
           </li>
           <li>
