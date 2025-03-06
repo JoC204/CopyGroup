@@ -1,11 +1,14 @@
 import React, { useEffect, useRef } from "react";
 import imgBack from "../../img/background-empresa.jpg";
-import imgSerigrafia from "../../img/Serigrafia/008.jpg";
+// import imgSerigrafia from "../../img/Serigrafia/008.jpg";
+import ImgSerigrafia from "../DirImg/ImgSerigrafia";
 import imgDigital from "../../img/imp-digitales/006.jpg";
 import imgRotulados from "../../img/11.jpg";
 import imgLonas from "../../img/9.jpg";
 import "../../styles/Empresa.css";
 // import "../../styles/Body-routes.css";
+
+const Serigrafia = ImgSerigrafia;
 
 const Empresa = () => {
   const imgRef = useRef(null); // Referencia para la imagen de fondo
@@ -82,9 +85,10 @@ const Empresa = () => {
         <ul>
           <li>
             <h3>Serigrafía</h3>
+            <div className="service-prueba">
             <img
               ref={(el) => (serviceImagesRefs.current[1] = el)}
-              src={imgSerigrafia}
+              src={Serigrafia[7]}
               alt="Serigrafía"
               className="service-image"
             />
@@ -93,6 +97,7 @@ const Empresa = () => {
               duraderas y de alta calidad en textiles, plásticos, metales y
               otros soportes.
             </p>
+            </div>
           </li>
           <li>
             <h3>Impresiones Digitales</h3>

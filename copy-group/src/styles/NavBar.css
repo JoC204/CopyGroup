@@ -265,19 +265,21 @@
     opacity: 1;
     animation: none;
     position: relative;
+    /* background-color: #00ff00; */
   }
 
   .navbar-item a {
     color: #fff;
     text-decoration: none;
-    padding: 2rem 0 0 0;
+    padding: 2rem 0 2rem 0;
     position: relative;
     display: flex;
     align-items: center;
-    height: 2.5rem; /* Adjust this value as needed for spacing */
-    transition: margin-top 500ms, font-size 500ms, padding-bottom 500ms,
+    height: 5rem; /* Adjust this value as needed for spacing */
+    transition: margin-bottom 1100ms, font-size 500ms, padding-bottom 500ms,
       border-bottom 500ms;
     text-shadow: #000000 1px 1px 5px;
+    /* background-color: red; */
   }
 
   .navbar-item a::before {
@@ -312,13 +314,13 @@
   }
 
   .navbar-item a:hover {
-    margin-top: 2rem;
-    transition: margin-top 500ms, font-size 500ms, padding-bottom 500ms,
+    margin-bottom: 2rem;
+    transition: margin-bottom 500ms, font-size 500ms, padding-top 500ms,
       border-bottom 500ms;
   }
 
   .navbar-item:hover {
-    transition: margin-top 500ms, font-size 500ms, padding-bottom 500ms,
+    transition: margin-bottom 500ms, font-size 500ms, padding-top 500ms,
       border-bottom 500ms;
   }
 }

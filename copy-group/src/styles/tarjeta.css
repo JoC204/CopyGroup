@@ -39,15 +39,14 @@
 
 .card p.tip {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
-.card p.second-text {
-  font-size: 0.7em;
-}
+
 
 .card:hover {
   transform: scale(1.1);
+  z-index: 5;
 }
 
 

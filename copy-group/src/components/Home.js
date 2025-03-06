@@ -17,8 +17,9 @@ const Home = () => {
   const links = [
     { path: "/empresa", 
       color: "blue",
-      title: "Empresa" },
-      {
+      title: "Empresa" 
+      },
+    {
         path: "/serigrafia",
         color: "purple",
         title: "Serigrafia",
@@ -27,20 +28,11 @@ const Home = () => {
       path: "/digitalPrint",
       color: "black",
       title: "Impresiones Digitales",
-    },
-    // {
-    //   path: "/rotulados",
-    //   color: "green",
-    //   title: "Rotulados",
-    // },
-    // {
-    //   path: "/impresionLona",
-    //   color: "red",
-    //   title: "Impresiones en Lonas",
-    // },
+      },
     { path: "/contact", 
       color: "yellow", 
-      title: "Contacto" },
+      title: "Contacto" 
+      },
   ];
 
   return (

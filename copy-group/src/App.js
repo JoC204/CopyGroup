@@ -7,10 +7,9 @@ import Home from "./components/Home";
 import Empresa from "./components/ListMenu/Empresa";
 import DigitalPrint from "./components/ListMenu/DigitalPrint";
 import Serigrafia from "./components/ListMenu/Serigrafia";
-import Rotulados from "./components/ListMenu/Rotulados";
-import ImpresionLona from "./components/ListMenu/ImpresionLona";
 import Contact from "./components/ListMenu/Contact";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
@@ -25,13 +24,12 @@ function App() {
             <Route path="/empresa" element={<Empresa />} />
             <Route path="/digitalPrint" element={<DigitalPrint />} />
             <Route path="/serigrafia" element={<Serigrafia />} />
-            <Route path="/rotulados" element={<Rotulados />} />
-            <Route path="/impresionLona" element={<ImpresionLona />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>
       <Footer />
+      <WhatsAppButton />
     </Router>
   );
 }

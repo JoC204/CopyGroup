@@ -1,14 +1,12 @@
-// src/components/ImageCarousel.js
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import '../../styles/FrontCarousel.css';
+import React from "react";
+import { Link as RouterLink } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../../styles/FrontCarousel.css";
 
-import image1 from '../../img/mesaPortada.png';
-import video1 from '../../img/copy-serigrafia.mp4';
-
-
+import image1 from "../../img/mesaPortada.png";
+import video1 from "../../img/copy-serigrafia.mp4";
 
 const FrontCarousel = () => {
   const settings = {
@@ -29,10 +27,16 @@ const FrontCarousel = () => {
   return (
     <div className="carousel-container-front">
       <Slider {...settings}>
-        <div>
+        <div className="slide">
           <img src={image1} alt="Slide 0" className="carousel-image" />
+          <div className="carousel-text">Incorporamos la <td><span className="big-letter">JXF-200-2513</span></td></div>
+          <div className="carousel-text-1">Mejor calidad de impresión y mayor superficie</div>
+          <RouterLink to="/contact">
+          <div className="carousel-text-2">Contáctanos para más información</div>
+          </RouterLink>
         </div>
-        <div>
+
+        <div className="slide">
           <video
             src={video1}
             alt="Slide 1"
@@ -40,8 +44,11 @@ const FrontCarousel = () => {
             autoPlay
             loop
             muted
-            style={{ width: '100%' }}
+            style={{ width: "100%" }}
           />
+          <div className="carousel-text-3">
+            Más de 30 años de experiencia <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;en serigrafía de alta calidad.</td>
+          </div>
         </div>
       </Slider>
     </div>
