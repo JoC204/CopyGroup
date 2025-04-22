@@ -27,6 +27,7 @@
   from {
     opacity: 0;
     transform: translateX(250px);
+    
   }
   to {
     opacity: 1;
@@ -130,13 +131,94 @@
   }
 }
 
-/* Estilo adicional para tabletas y pantallas medianas */
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 749px) {
   .carousel-container-front {
     width: 100%;
   }
   .carousel-container-front img {
     left: 20px;
+  }
+  .carousel-text {
+    top: 35%;
+    font-size: 1rem;
+    left: 70%;
+  }
+  .carousel-text-1 {
+    font-size: 1rem;
+    left: 47%;
+  }
+  .carousel-text-2 {
+    font-size: 0.9rem;
+  }
+  .carousel-text-3 {
+    font-size: 2rem;
+    bottom: 15%;
+    left: 10%;
+  }
+
+  .carousel-image,
+  .carousel-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 999px) {
+  .carousel-container-front {
+    width: 100%;
+  }
+  .carousel-container-front img {
+    left: 20px;
+  }
+  .carousel-text {
+    top: 28%;
+    font-size: 1.9rem;
+    left: 60%;
+  }
+  .carousel-text-1 {
+    font-size: 1.3rem;
+    left: 47%;
+  }
+  .carousel-text-2 {
+    font-size: 1.2rem;
+  }
+  .carousel-text-3 {
+    font-size: 2rem;
+    bottom: 15%;
+    left: 10%;
+  }
+
+  .carousel-image,
+  .carousel-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilo adicional para tabletas y pantallas medianas */
+@media (min-width: 1000px) and (max-width: 1399px) {
+  .carousel-container-front {
+    width: 100%;
+  }
+  .carousel-container-front img {
+    left: 20px;
+  }
+  .carousel-text {
+    top: 20%;
+    font-size: 3rem;
+    left: 55%;
+  }
+  .carousel-text-1 {
+    font-size: 2rem;
+    left: 47%;
+  }
+  .carousel-text-2 {
+    font-size: 1.5rem;
+  }
+  .carousel-text-3 {
+    font-size: 3rem;
+    bottom: 15%;
+    left: 10%;
   }
 
   .carousel-image,
@@ -147,7 +229,7 @@
 }
 
 /* Estilo adicional para pantallas grandes */
-@media (min-width: 1025px) {
+@media (min-width: 1400px) {
   .carousel-container-front {
     width: 100%;
   }
@@ -159,5 +241,20 @@
   .carousel-video {
     width: 100%;
     height: auto;
+  }
+  .carousel-text {
+    font-size: 3rem;
+  }
+  .carousel-text-1 {
+    font-size: 3rem;
+    left: 47%;
+  }
+  .carousel-text-2 {
+    font-size: 2rem;
+  }
+  .carousel-text-3 {
+    font-size: 3rem;
+    bottom: 20%;
+    left: 10%;
   }
 }

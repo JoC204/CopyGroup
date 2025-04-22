@@ -87,41 +87,58 @@ ul {
 }
 
 /* Estilos para pantallas de 1600px y menos */
-@media (max-width: 2100px) {
+@media (min-width: 1000px) {
   .header-content {
-    width: 50rem; /* Ancho específico para pantallas de 1600px */
+    width: 60rem; /* Ancho específico para pantallas de 1600px */
   }
 
   .header-content h1 {
     font-size: 4rem;
   }
   .header-content p {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   .services-content h2 {
     font-size: 4rem;
   }
   .parrafo {
-    font-size: 1.5rem;
-    margin: 1rem 1rem 0 1rem;
+    font-size: 2.5rem;
+    margin: 4rem;
+    padding: 0 20rem;
+    text-align: center;
   }
-  
-  
+  .service-image {
+    width: 20rem;
+    height: auto;
+    margin: 0;
+    border-radius: 0.7rem;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  .compromiso {
+    margin: 0 8rem 0 8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
 }
 
 /* Estilos para pantallas de 1200px y menos */
-@media (max-width: 1200px) {
+@media (max-width: 999px) and (min-width: 599px) {
   .header-content {
-    width: 40rem; /* Ancho específico para pantallas de 1200px */
+    width: 30rem; /* Ancho específico para pantallas de 1200px */
+    font-size: 1.5rem;
+  }
+  .parrafo {
+    font-size: 1.5rem;
+    margin: 4rem;
+    padding: 0 5rem;
+    text-align: center;
   }
 }
 
 /* Estilos para pantallas de 900px y menos */
-@media (max-width: 900px) {
-  .header-content {
-    width: 30rem; /* Ancho específico para pantallas de 900px */
-  }
-}
+
 
 /* Estilos para pantallas de 600px y menos */
 @media (max-width: 600px) {
@@ -143,6 +160,9 @@ ul {
   }
 
   .header-content h1 {
-    font-size: 2rem;
+    font-size: 1rem;
+  }
+  .header-content p {
+    font-size: 1.3rem;
   }
 }
